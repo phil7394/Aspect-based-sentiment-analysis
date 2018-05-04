@@ -162,7 +162,7 @@ def read_embeddings(embd_file):
         lines = ef.readlines()
         line_list = [x.strip('\n') for x in lines]
         for line in line_list:
-            embd_train_data.append(line.split()[1:-1])
-            embd_train_class.append(line.split()[-1])
+            embd_train_data.append(list(map(float, line.split(' ')[1:-1])))
+            embd_train_class.append(int(line.split(' ')[-1]))
 
     return np.array(embd_train_data), np.array(embd_train_class)
