@@ -1,13 +1,14 @@
 import argparse
-import numpy as np
+import os.path
+from collections import defaultdict
+
 import nltk
+import numpy as np
 import pandas
 from gensim.models import KeyedVectors
 from gensim.models import Word2Vec
-import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
-from collections import Counter, defaultdict
-import os.path
+
 
 class MeanEmbeddingVectorizer(object):
     def __init__(self, word2vec):
@@ -15,24 +16,25 @@ class MeanEmbeddingVectorizer(object):
         self.dim = len(list(word2vec.values())[0])
 
     def fit(self, X, y):
-        return self 
+        return self
 
     def transform(self, X):
         return np.array([
-            np.mean([self.word2vec[w] for w in X if w in self.word2vec] 
+            np.mean([self.word2vec[w] for w in X if w in self.word2vec]
                     or [np.zeros(self.dim)], axis=0)
         ])
-    
+
+
 # and a tf-idf version of the same
 class TfidfEmbeddingVectorizer(object):
     def __init__(self, word2vec):
         self.word2vec = word2vec
         self.word2weight = None
-        if len(word2vec)>0:
-            self.dim=len(list(word2vec.values())[0])
+        if len(word2vec) > 0:
+            self.dim = len(list(word2vec.values())[0])
         else:
-            self.dim=0
-        
+            self.dim = 0
+
     def fit(self, X):
         tfidf = TfidfVectorizer(analyzer='word')
         tfidf.fit(X)
@@ -41,20 +43,21 @@ class TfidfEmbeddingVectorizer(object):
         # known idf's
         max_idf = max(tfidf.idf_)
         self.word2weight = defaultdict(
-            lambda: max_idf, 
+            lambda: max_idf,
             [(w, tfidf.idf_[i]) for w, i in tfidf.vocabulary_.items()])
 
-        
         return self
-    
+
     def transform(self, X):
         return np.array([
-                np.mean([self.word2vec[w] * self.word2weight[w]
-                         for w in X if w in self.word2vec] or
-                        [np.zeros(self.dim)], axis=0)
-            ])
-    
+            np.mean([self.word2vec[w] * self.word2weight[w]
+                     for w in X if w in self.word2vec] or
+                    [np.zeros(self.dim)], axis=0)
+        ])
+
+
 def pos2vec(pvdf):
+    print("pos2vec...")
     with open(args['output'] + "/pos2vec.txt", 'w') as of:
         full_pos_list = []
         for index, row in pvdf.iterrows():
@@ -76,8 +79,9 @@ def pos2vec(pvdf):
 
 
 def lex2vec(lvdf):
+    print("lex2vec...")
     sswe_dict = dict()
-    with open("embedding/sswe-u.txt", 'r', encoding = 'utf8') as sf:
+    with open("embedding/sswe-u.txt", 'r', encoding='utf8') as sf:
         for line in sf:
             values = line.split()
             word = values[0]
@@ -96,6 +100,7 @@ def lex2vec(lvdf):
             of.write(k + " " + v + "\n")
         return l2v_dict
 
+
 def sentence2sequence(glove_wordmap, sentence):
     """
      
@@ -111,7 +116,7 @@ def sentence2sequence(glove_wordmap, sentence):
     tokens = sentence.lower().split(" ")
     rows = []
     words = []
-    #Greedy search for tokens
+    # Greedy search for tokens
     for token in tokens:
         i = len(token)
         while len(token) > 0 and i > 0:
@@ -122,14 +127,16 @@ def sentence2sequence(glove_wordmap, sentence):
                 token = token[i:]
                 i = len(token)
             else:
-                i = i-1
+                i = i - 1
     return rows, words
 
-def glove2vec(gvdf, customTrained=False, mean = False):
-    #TODO: Custom Train
+
+def glove2vec(gvdf, customTrained=False, mean=False):
+    # TODO: Custom Train
+    print("glove2vec...")
     glove_vectors_file = "glove.840B.300d.txt"
     glove_wordmap = {}
-    encoding="utf-8"
+    encoding = "utf-8"
     X = []
     for index, row in gvdf.iterrows():
         X.append(row[' text'].lower())
@@ -140,15 +147,15 @@ def glove2vec(gvdf, customTrained=False, mean = False):
             parts = line.split()
             word = parts[0].decode(encoding)
             if word in all_words:
-                nums=np.array(parts[1:], dtype=np.float32)
+                nums = np.array(parts[1:], dtype=np.float32)
                 glove_wordmap[word] = nums
-        
+
     tev = TfidfEmbeddingVectorizer(glove_wordmap)
     with open(args['output'] + "/glove2vec.txt", 'w', encoding="utf8") as of:
         g2v_dict = dict()
         for index, row in gvdf.iterrows():
             word_list = row[' text'].split(" ")
-            
+
             if mean:
                 tev.fit(word_list)
                 word_list = tev.transform(word_list)[0]
@@ -158,12 +165,13 @@ def glove2vec(gvdf, customTrained=False, mean = False):
         for k, v in g2v_dict.items():
             of.write(k + " " + v + "\n")
         return g2v_dict
-        
 
-def word2vec(wdf, customTrained=False, mean = False):
+
+def word2vec(wdf, customTrained=False, mean=False):
+    print("word2vec...")
     # Load Google's pre-trained Word2Vec model.
     if not customTrained:
-        w2v_wordmap = KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)  
+        w2v_wordmap = KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
     word_list = []
     sentences = []
     if customTrained:
@@ -188,8 +196,10 @@ def word2vec(wdf, customTrained=False, mean = False):
         for k, v in w2v_dict.items():
             of.write(k + " " + v + "\n")
         return w2v_dict
-            
+
+
 def postion2vec(df):
+    print("position2vec...")
     with open(args['output'] + "/position2vec.txt", 'w') as of:
         p2v_dict = dict()
         for index, row in df.iterrows():
@@ -212,34 +222,34 @@ def postion2vec(df):
         for k, v in p2v_dict.items():
             of.write(k + " " + v + "\n")
         return p2v_dict
-    
+
+
 def idv(df):
+    print("idv...")
     with open(args['output'] + "/improvedvec.txt", 'w') as of:
         idv_dict = dict()
         pos_dict = pos2vec(df)
         lex_dict = lex2vec(df)
-        mg2v_dict = glove2vec(df, customTrained=False, mean = True)
-        g2v_dict = glove2vec(df, customTrained=False, mean = False)
-        w2v_dict = word2vec(df, customTrained=False, mean = False)
-        cmw2v_dict = word2vec(df, customTrained=True, mean = True)
-        mw2v_dict = word2vec(df, customTrained=False, mean = True)
+        mg2v_dict = glove2vec(df, customTrained=False, mean=True)
+        g2v_dict = glove2vec(df, customTrained=False, mean=False)
+        w2v_dict = word2vec(df, customTrained=False, mean=False)
+        cmw2v_dict = word2vec(df, customTrained=True, mean=True)
+        mw2v_dict = word2vec(df, customTrained=False, mean=True)
         position_dict = postion2vec(df)
         for index, row in df.iterrows():
-            idv_dict[row['example_id']] = mg2v_dict[row['example_id']] + " " + position_dict[row['example_id']]  + " " + lex_dict[row['example_id']] + " " + pos_dict[row['example_id']]
+            idv_dict[row['example_id']] = mg2v_dict[row['example_id']] + " " + position_dict[row['example_id']] + " " + \
+                                          lex_dict[row['example_id']] + " " + pos_dict[row['example_id']]
         for k, v in idv_dict.items():
             of.write(k + " " + v + "\n")
-        
 
 
-    
 def fit_to_size(matrix, shape):
     res = np.zeros(shape)
-    slices = [slice(0,min(dim,shape[e])) for e, dim in enumerate(matrix.shape)]
+    slices = [slice(0, min(dim, shape[e])) for e, dim in enumerate(matrix.shape)]
     res[slices] = matrix[slices]
     return res
 
 
-            
 if __name__ == '__main__':
     # python Embedder.py -i out_data_2/data_2.csv -o embedding/data_set_2 -pv y -lv y
     # python Embedder.py -i out_data_1/data_1.csv -o embedding/data_set_1 -pv y -lv y
@@ -255,9 +265,12 @@ if __name__ == '__main__':
     optional.add_argument('-cwv', '--customword2vec', help='custom word2vec (y/n)', choices=['y', 'n'], required=False)
     optional.add_argument('-mgv', '--meanglove2vec', help='mean glove2vec (y/n)', choices=['y', 'n'], required=False)
     optional.add_argument('-mwv', '--meanword2vec', help='mean word2vec (y/n)', choices=['y', 'n'], required=False)
-    optional.add_argument('-cgv', '--customglove2vec', help='custom glove2vec (y/n)', choices=['y', 'n'], required=False)
-    optional.add_argument('-mcwv', '--meancustomword2vec', help='mean custom word2vec (y/n)', choices=['y', 'n'], required=False)
-    optional.add_argument('-mcgv', '--meancustomglove2vec', help='mean custom glove2vec (y/n)', choices=['y', 'n'], required=False)
+    optional.add_argument('-cgv', '--customglove2vec', help='custom glove2vec (y/n)', choices=['y', 'n'],
+                          required=False)
+    optional.add_argument('-mcwv', '--meancustomword2vec', help='mean custom word2vec (y/n)', choices=['y', 'n'],
+                          required=False)
+    optional.add_argument('-mcgv', '--meancustomglove2vec', help='mean custom glove2vec (y/n)', choices=['y', 'n'],
+                          required=False)
     optional.add_argument('-p2v', '--position2vec', help='position2vec (y/n)', choices=['y', 'n'], required=False)
     optional.add_argument('-idv', '--improvedvec', help='improvedvec (y/n)', choices=['y', 'n'], required=False)
 
@@ -270,24 +283,22 @@ if __name__ == '__main__':
     if args['lex2vec'] == 'y':
         lex2vec(df)
     if args['glove2vec'] == 'y':
-        glove2vec(df, customTrained=False, mean = False)
+        glove2vec(df, customTrained=False, mean=False)
     if args['word2vec'] == 'y':
-        word2vec(df, customTrained=False, mean = False)
+        word2vec(df, customTrained=False, mean=False)
     if args['customword2vec'] == 'y':
-        word2vec(df, customTrained=True, mean = False)
+        word2vec(df, customTrained=True, mean=False)
     if args['customglove2vec'] == 'y':
-        glove2vec(df, customTrained=True, mean = False)
+        glove2vec(df, customTrained=True, mean=False)
     if args['meanglove2vec'] == 'y':
-        glove2vec(df, customTrained=False, mean = True)
+        glove2vec(df, customTrained=False, mean=True)
     if args['meanword2vec'] == 'y':
-        word2vec(df, customTrained=False, mean = True)
+        word2vec(df, customTrained=False, mean=True)
     if args['meancustomword2vec'] == 'y':
-        word2vec(df, customTrained=True, mean = True)
+        word2vec(df, customTrained=True, mean=True)
     if args['meancustomglove2vec'] == 'y':
-        glove2vec(df, customTrained=True, mean = True)
+        glove2vec(df, customTrained=True, mean=True)
     if args['position2vec'] == 'y':
         postion2vec(df)
     if args['improvedvec'] == 'y':
         idv(df)
-        
-

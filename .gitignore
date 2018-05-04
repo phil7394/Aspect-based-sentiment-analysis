@@ -3,3 +3,4 @@
 venv/*
 embedding/*
 model_dumps/*
+stanford-nlp-jars/*
