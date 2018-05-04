@@ -82,7 +82,7 @@ def pos2vec(pvdf):
 def lex2vec(lvdf):
     print("lex2vec...")
     sswe_dict = dict()
-    with open("embedding/sswe-u.txt", 'r', encoding='utf8') as sf:
+    with open("embedding/sswe-u.txt", 'r') as sf:
         for line in sf:
             values = line.split()
             word = values[0]
@@ -152,7 +152,7 @@ def glove2vec(gvdf, customTrained=False, mean=False):
                 glove_wordmap[word] = nums
 
     tev = TfidfEmbeddingVectorizer(glove_wordmap)
-    with open(args['output'] + "/glove2vec.txt", 'w', encoding="utf8") as of:
+    with open(args['output'] + "/glove2vec.txt", 'w') as of:
         g2v_dict = dict()
         for index, row in gvdf.iterrows():
             word_list = row[' text'].split(" ")
@@ -186,7 +186,7 @@ def word2vec(wdf, customTrained=False, mean=False):
             w2v_wordmap.save('GoogleNews-vectors-negative300-custom.bin')
     w2v_wordmap = {w: vec for w, vec in zip(w2v_wordmap.wv.index2word, w2v_wordmap.wv.syn0)}
     tev = TfidfEmbeddingVectorizer(w2v_wordmap)
-    with open(args['output'] + "/word2vec.txt", 'w', encoding="utf8") as of:
+    with open(args['output'] + "/word2vec.txt", 'w') as of:
         w2v_dict = dict()
         for index, row in wdf.iterrows():
             word_list = row[' text'].split(" ")
