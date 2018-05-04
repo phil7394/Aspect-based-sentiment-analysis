@@ -79,6 +79,7 @@ def train_SVC(filePath):
     '''TRAINING'''
     # train_df = pandas.read_csv(filePath, sep='\t')
     train_data, train_class = model_utils.read_embeddings(filePath)
+    print(set(train_class))
     # train_class = train_df[' class'].as_matrix()
     for i in range(18, 19, 1):
         # train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i, count_vec_file)
@@ -86,8 +87,8 @@ def train_SVC(filePath):
         text_clf = SVC(C=1, cache_size=2000, class_weight=None, coef0=0.0,
                        decision_function_shape='ovr', degree=0, gamma=0.9, kernel='rbf',
                        max_iter=-1, probability=False, random_state=None, shrinking=True,
-                       tol=0.003, verbose=False).fit(train_data, train_class)
-        joblib.dump(text_clf, 'model_dumps/data_2/wt_aspect/SVC_model.pkl')  # Accuracy: ', 0.7505889749930229
+                       tol=0.003, verbose=False).fit(train_data[:1619], train_class[:1619])
+        joblib.dump(text_clf, 'model_dumps/data_1/SVC_model.pkl')  # Accuracy: ', 0.7505889749930229
 
         """PERFORMANCE EVALUATION"""
 
@@ -400,8 +401,8 @@ if __name__ == '__main__':
     # train_BernoulliNB(filePath)
     # print("SGD ")
     # train_SGD(filePath)
-    # print("SVC ")
-    # train_SVC(filePath)
+    print("SVC ")
+    train_SVC(filePath)
     # print("XGBClassifier ")
     # train_XGBClassifier(filePath)
     # print("Random Forest")
@@ -410,4 +411,4 @@ if __name__ == '__main__':
     # train_ET(filePath)
     # print("Stacked Generalizer")
     # train_StackedGeneralizer(filePath)
-    hyperparam_tuning_SVC()
+    # hyperparam_tuning_SVC()
