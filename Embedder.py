@@ -72,8 +72,8 @@ def pos2vec(pvdf):
             word_list = nltk.word_tokenize(row[' text'])
             tagged_list = list(map(lambda w_p_tuple: w_p_tuple[1], nltk.pos_tag(word_list)))
             tev.fit(tagged_list)
-            vec = tev.transform(tagged_list)
-            p2v_dict[row['example_id']] = " ".join(map(str, vec.tolist())) + " " + str(row[' class'])
+            vec = tev.transform(tagged_list)[0]
+            p2v_dict[row['example_id']] = " ".join(map(str, vec.tolist()))
         for k, v in p2v_dict.items():
             of.write(k + " " + v + "\n")
         return p2v_dict
@@ -96,7 +96,7 @@ def lex2vec(lvdf):
             word_list = nltk.word_tokenize(row[' text'])
             tev.fit(word_list)
             vec = tev.transform(word_list)[0]
-            l2v_dict[row['example_id']] = " ".join(map(str, vec.tolist())) + " " + str(row[' class'])
+            l2v_dict[row['example_id']] = " ".join(map(str, vec.tolist()))
         for k, v in l2v_dict.items():
             of.write(k + " " + v + "\n")
         return l2v_dict
@@ -162,7 +162,7 @@ def glove2vec(gvdf, customTrained=False, mean=False):
                 word_list = tev.transform(word_list)[0]
             else:
                 word_list, words = sentence2sequence(glove_wordmap, row[' text'])
-            g2v_dict[row['example_id']] = " ".join(map(str, word_list)) + " " + str(row[' class'])
+            g2v_dict[row['example_id']] = " ".join(map(str, word_list))
         for k, v in g2v_dict.items():
             of.write(k + " " + v + "\n")
         return g2v_dict
@@ -193,7 +193,7 @@ def word2vec(wdf, customTrained=False, mean=False):
             if mean:
                 tev.fit(word_list)
                 word_list = tev.transform(word_list)[0]
-            w2v_dict[row['example_id']] = " ".join(map(str, word_list)) + " " + str(row[' class'])
+            w2v_dict[row['example_id']] = " ".join(map(str, word_list))
         for k, v in w2v_dict.items():
             of.write(k + " " + v + "\n")
         return w2v_dict
@@ -219,7 +219,7 @@ def postion2vec(df):
                     word_list.append(i - aspect_index[-1])
                 else:
                     word_list.append(0)
-            p2v_dict[row['example_id']] = " ".join(map(str, word_list)) + " " + str(row[' class'])
+            p2v_dict[row['example_id']] = " ".join(map(str, word_list))
         for k, v in p2v_dict.items():
             of.write(k + " " + v + "\n")
         return p2v_dict

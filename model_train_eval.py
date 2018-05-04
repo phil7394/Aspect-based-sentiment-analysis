@@ -298,17 +298,17 @@ def hyperparam_tuning_SVC():
     clf = SVC()
 
     train_df = pandas.read_csv('out_data_2/data_2_sw_train.csv', sep='\t')
-    train_data = model_utils.apply_aspdep_weight(train_df, 0.8)
+    train_data = model_utils.apply_aspdep_weight(train_df, 1.8)
     train_class = train_df[' class'].as_matrix()
     parameters = {
-        'C': np.arange(1, 5, 1).tolist(),
-        'kernel': ['rbf', 'poly'],  # precomputed,'poly', 'sigmoid'
-        'degree': np.arange(0, 3, 1).tolist(),
-        'gamma': np.arange(0.0, 1.0, 0.1).tolist(),
+        'C': np.arange(1, 2, 1).tolist(),
+        'kernel': ['rbf'],  # precomputed,'poly', 'sigmoid'
+        'degree': np.arange(0, 1, 1).tolist(),
+        'gamma': np.arange(0.6, 0.7, 0.1).tolist(),
         'coef0': np.arange(0.0, 1.0, 0.1).tolist(),
         'shrinking': [True],
         'probability': [False],
-        'tol': np.arange(0.001, 0.01, 0.001).tolist(),
+        'tol': np.arange(0.001, 0.01, 0.05).tolist(),
         'cache_size': [2000],
         'class_weight': [None],
         'verbose': [False],
