@@ -108,7 +108,7 @@ def train_XGBClassifier(filePath):
     text_clf = XGBClassifier(learning_rate=1.1, n_estimators=20, max_depth=60,
                              min_child_weight=6, gamma=0.5, subsample=1.0, colsample_bytree=1.0,
                              objective='binary:logistic', scale_pos_weight=1,
-                             silent=False).fit(train_data, train_class)
+                             silent=True).fit(train_data, train_class)
     joblib.dump(text_clf, 'model_dumps/data_1/wt_aspect/XGB_model.pkl')
 
     """PERFORMANCE EVALUATION"""
@@ -385,7 +385,7 @@ if __name__ == '__main__':
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
-    filePath = 'out_data_2/data_2_sw.csv'
+    filePath = 'out_data_2/data_2_sw_train.csv'
     # filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
