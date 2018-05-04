@@ -1,0 +1,694 @@
+	example_id	 text	 aspect_term	 term_location	 class	asp_dep_words	opin_polarity
+1620	1179_0	first discover word processing program known appleworks rarely translates perfectly anyone else computer translates	appleworks	66--76	-1	appleworks translates translates	0.0
+1621	91_0	later held zero charge replacement worked less three months	charge	19--25	-1	charge replacement	0.0
+1622	1541_1	the fact spend $100 webcam underscores value machine	value	71--76	1	value machine	1.0
+1623	768_0	this 3rd day part still not shipped	shipped	49--56	-1	3rd part still not shipped	0.0
+1624	174_0	when i got computer back realized still not correct hp told warranty problem	warranty	93--101	0	warranty problem	-1.0
+1625	1310_0	even hinge may slightly tightened	hinge	19--24	0	hinge tightened	0.0
+1626	147_0	the keyboard slick	keyboard	4--12	-1	the keyboard slick	0.0
+1627	1417_1	the board bad connector power supply shortly warrenty expires power supply start issues	connector	22--31	-1	bad connector supply supply	-1.0
+1628	2035_0	i took friend temporarily fixed i finally paid 1500 extended warranty	extended warranty	83--100	0	paid extended warranty	0.0
+1629	2408_0	mac also many apps programs quite cheap free	apps	18--22	1	mac also many apps programs quite cheap free	1.0
+1630	2532_0	the downfall lot software i work mac iwork not worth price	iwork	74--79	-1	software iwork not worth price	-1.0
+1631	1613_0	also macbooks come much features cool	features	35--43	1	come much features cool	1.0
+1632	810_0	you will not be able to talk to an american warranty service is out of country	warranty service	44--60	-1	warranty service out	0.0
+1633	2588_0	its office compatible features functioning new might well save money learn pre installed mac programs	features	31--39	0	features functioning new	0.0
+1634	1616_0	it super easy set is really easy get used	set	21--27	1	super easy set is really easy used	1.0
+1635	743_0	when i finally everything running software installed i plugged droid recharge system crashed	software	50--58	0	running software	0.0
+1636	2724_0	only issue little slow i fixing adding ram	ram	75--78	0	adding ram	0.0
+1637	1087_0	either way the keyboard is unsatisfactory	keyboard	16--24	-1	way the keyboard is unsatisfactory	0.0
+1638	440_2	i love solid build light wt excellent battery life	battery life	47--59	1	wt excellent battery life	1.0
+1639	2047_0	i never buy another computer dell ever awful worked i treated company	company	110--117	-1	treated company	0.0
+1640	2977_0	laptops usually used go not give better battery	battery	65--72	-1	give better battery	1.0
+1641	1289_1	so i paid visit lg notebook service center alexandra road hoping make hinge tighter	hinge	93--98	-1	make hinge tighter	0.0
+1642	102_4	the dv4 boasted faster processor memory bigger hard drive old computer plus better quality web cam nicer screen many features	screen	132--138	1	drive screen many features	0.0
+1643	1022_0	as well plug computer come loose	plug	22--26	-1	plug computer	0.0
+1644	2407_0	you even run parallels type program easily run leftover pc software absolutely cannot without	parallels type program	19--41	1	run parallels type program run	0.0
+1645	2488_0	the one thing i wish detailed hardcopy manuel	hardcopy manuel	43--58	-1	wish detailed hardcopy manuel	1.0
+1646	2304_2	3 usb ports 1 sd memory card reader sd memory car expansion	sd memory car expansion	51--74	0	sd memory card reader sd memory car expansion	0.0
+1647	312_0	the computer runs fast no problems ilife software comes iphoto imovie web itunes garageband helpful well	ilife software	53--67	1	runs no problems ilife software	-1.0
+1648	1558_1	the macbook starts fast crash fantastic display small light i 13 3 model always complaining updates lost connections errors blue screens etc	starts	12--18	1	macbook starts complaining lost	-1.0
+1649	2851_0	my first problem pre loaded norton firewall security program	pre loaded norton firewall security program	30--73	-1	my first problem pre loaded norton firewall security program	-1.0
+1650	1075_1	it could perfect laptop would faster system memory radeon 5850 would ddr5 instead ddr3	radeon 5850	75--86	-1	radeon 5850 ddr5	0.0
+1651	1545_1	i use tutoring business since i always bouncing student student ideal portability battery life yes gets 8 hours advertised	battery life	124--136	1	student student ideal portability battery life yes	1.0
+1652	331_2	it 10 hour battery life web browsing word editing making perfect classroom office terms gaming movie playing battery life 5 hours	gaming	142--148	0	gaming movie	0.0
+1653	2836_0	mouse pad left button always sticks	mouse pad	4--20	0	mouse pad left sticks	0.0
+1654	394_0	the leather carrying case keyboard mouse arrived two days memphis warehouse	leather carrying case	4--25	0	the leather carrying case mouse arrived	0.0
+1655	3042_1	hard disk the new editions gives hard disk space 500gb instead 320gb time taught never trust internal hard disk	hard disk space	44--59	1	hard disk gives hard disk space taught trust internal hard disk	1.0
+1656	1749_4	only thing using document creation apple doesnt provide kind word processor works windows iwork cheap compared office	document creation	51--68	0	document creation doesnt	1.0
+1657	2696_0	i would like volume buttons rather adjustment front	volume buttons	21--35	-1	like volume buttons	1.0
+1658	824_0	sometimes screen even goes black computer	screen	16--22	-1	screen goes	0.0
+1659	1757_1	great laptop price works well action pack games	action pack games	44--61	0	works action pack games	0.0
+1660	452_3	i windows linux user i love size screen big enough i use internet artwork yet small enough reasonably portable	linux	22--27	0	linux user	0.0
+1661	227_0	if want information macs i suggest going apple com heading towards macbook page information applications	applications	131--143	0	information heading towards macbook page information applications	0.0
+1662	1130_0	after replacing hard drive battery stopped working 3 months use frustrating	hard drive	20--30	0	replacing hard drive	-1.0
+1663	925_0	you call hp want buy software fix	software	46--54	0	software fix	0.0
+1664	2773_1	i purchase spy ware nortell privacy protection	nortell	36--43	0	nortell protection	0.0
+1665	76_2	i even got teenage son one features offers like ichat photobooth garage band	photobooth	84--94	1	teenage one like photobooth	1.0
+1666	353_1	from build quality performance everything sub par i would expected apple	performance	30--41	-1	build quality performance par	0.0
+1667	273_1	even virus protection always turned updates needed installed	updates	54--61	-1	updates needed	0.0
+1668	2783_0	was not happy one programs	one programs	19--38	-1	was not happy one programs	-1.0
+1669	2588_1	its office compatible features functioning new might well save money learn pre installed mac programs	functioning	48--59	0	its office compatible features functioning new save	1.0
+1670	671_0	this nicely sized laptop lots processing power long battery life	processing power	43--59	1	sized processing power long life	0.0
+1671	2784_0	it not clear microsoft student edition loaded computer six month trial	microsoft student edition	26--51	-1	clear microsoft student edition loaded	1.0
+1672	337_3	however multi touch gestures large tracking area make external mouse unnecessary unless gaming	gaming	115--121	0	external mouse unnecessary unless gaming	0.0
+1673	2279_0	the sheer power flexibility makes macbook pro must techie	power	10--15	1	sheer power flexibility	1.0
+1674	1538_0	the design awesome quality unprecedented	design	4--10	1	the design awesome quality unprecedented	1.0
+1675	745_1	called tech support got usual acer we support software $$$ help i explained no software involved booting	software	124--132	-1	software help explained no software involved	1.0
+1676	2585_2	it very easy type feels great besides added feature keyboard lighted	type	19--23	1	easy type feels great keyboard lighted	1.0
+1677	2619_0	everything i tried worked i never carry wall charger cause battery awesome	wall charger	65--77	0	wall charger cause battery awesome	1.0
+1678	2239_0	after extensive research mac connection lowest price 15 mbp i5	price	61--66	1	extensive research connection price i5	0.0
+1679	349_0	also love extra calculator number set keyboard laptops not	keyboard	61--69	1	keyboard laptops	0.0
+1680	1553_0	great battery speed display	battery	6--13	1	great battery speed display	1.0
+1681	1497_0	the photobooth great program takes good pictures built camera	photobooth	4--14	1	photobooth great program	1.0
+1682	1139_0	i constantly send laptop services every 3 months always seems problem said already fixed	services	44--52	-1	send laptop services seems	0.0
+1683	1592_0	enjoy toshiba force durability unparalleled	force	18--23	1	force durability	0.0
+1684	2541_0	fact dont like apples generally use safari dont use safari install mozilla firefox love every single bit	safari	61--67	-1	dont use safari dont use safari install	0.0
+1685	1738_2	i plug 22 monitor speedy macosx performs well dual core dell windows 7 quad core	dual core	89--98	0	dual core windows 7 quad core	0.0
+1686	1783_0	it easy use great screen quality every light weight	screen quality	29--43	1	use great screen quality	1.0
+1687	777_0	how does the power supply not work	power supply	13--25	-1	does the power supply	0.0
+1688	1885_1	if internet connectivity important i would recommend going dell net book 50 bucks buy usb wireless card	usb wireless card	111--128	0	if internet connectivity important recommend buy usb wireless card	1.0
+1689	2032_0	the processor went fan went motherboard went	processor	4--13	-1	the processor went went went	0.0
+1690	102_2	the dv4 boasted faster processor memory bigger hard drive old computer plus better quality web cam nicer screen many features	hard drive	62--72	1	boasted processor bigger hard drive nicer screen	1.0
+1691	655_0	it truly great computer costing less one thousand bucks tax	costing	30--37	1	truly costing tax	1.0
+1692	568_0	this first time i tried owning netbook although i used 3 different laptops past 10 years i find not much difference except course screen size	screen size	172--183	0	find except course screen size	0.0
+1693	504_0	when i called sony customer service great	customer service	23--39	1	customer service great	1.0
+1694	1745_1	though picture video music software nowhere close professional grade software im used cs5 job beginner even intermediate media designers	software	85--93	1	picture video music software close professional grade software	0.0
+1695	486_1	that included extra sony sonic stage software speakers subwoofer i got was worth money bluetooth mouse supposedly bluetooth enabled computer extended life battery docking port	speakers	55--63	1	extra software speakers	0.0
+1696	154_1	the video card great media average gaming not gamers first choice	media	28--33	1	video card great media	1.0
+1697	1727_1	the recent safari internet browser freaking i using firefox instead	firefox	104--111	1	using firefox	0.0
+1698	1842_0	the lcd screen stopped working mine 10 months	lcd screen	6--16	-1	the lcd screen stopped	-1.0
+1699	3058_0	improved nothing else resolution appearance cooling system graphics card etc	resolution	35--45	-1	improved nothing else resolution appearance cooling system card	1.0
+1700	2585_0	it very easy type feels great besides added feature keyboard lighted	keyboard	80--88	1	great besides added feature keyboard lighted	1.0
+1701	2757_0	i also love design looks feel toshiba feature wonderful	design	16--22	1	design looks feel feature wonderful	1.0
+1702	400_1	the quality engineering design warranty superior covers damage dropping laptop	engineering design	13--31	1	engineering design warranty superior	1.0
+1703	1902_0	the screen almost looked like barcode froze	screen	6--12	-1	the screen looked	0.0
+1704	1467_0	for keys starting get stuck type well	keys	8--12	-1	keys starting get	0.0
+1705	792_0	the letter a stopped working first week	letter a	4--12	-1	the letter a stopped	-1.0
+1706	1142_2	and one point blame installing bad memory stick i upgrade memory first time purchase laptop i bought memory stick recommended	memory stick	159--171	0	and point installing bad memory stick upgrade memory first time memory stick recommended	-1.0
+1707	639_0	i propose i swap hard drives	hard drives	36--47	0	swap hard drives	-1.0
+1708	2495_0	the flaws computer not computer gamers os x	os x	71--75	-1	os	0.0
+1709	14_0	not much junk software remove	software	20--28	1	not much junk software remove	0.0
+1710	743_1	when i finally everything running software installed i plugged droid recharge system crashed	system	111--117	-1	droid recharge system crashed	0.0
+1711	1336_0	so laptops mobile phones look chic cool the sales support terrible	sales support	61--80	-1	look the sales support terrible	-1.0
+1712	2018_0	the materials came computer not include right anywhere	materials	4--13	-1	the materials came	0.0
+1713	2985_0	my daughter uses games email facebook pictures music	games	24--29	0	games pictures music	0.0
+1714	519_1	the battery life sucked juice laptop extended life battery went sol much warranty covering products purchased	warranty	132--140	-1	sol much warranty covering	0.0
+1715	1483_1	the laptop outstanding aspects except windows 7 starter not full windows 7	windows 7	99--108	1	laptop outstanding aspects except windows 7 starter not full windows 7	1.0
+1716	1434_0	more times not screen pops saying i bad internet connection page displayed	internet connection	59--78	-1	saying i bad internet connection	-1.0
+1717	2963_0	other i would recommend someone need cheap laptop semi decent gaming capabilities	gaming	94--100	1	decent gaming capabilities	0.0
+1718	2451_0	im glad great features	features	31--39	1	im glad great features	1.0
+1719	100_0	i course bought 3 year warranty i sent replaced almost 2 months later dv4 sent replacement	3 year warranty	25--40	0	bought 3 year warranty	0.0
+1720	2973_1	it plenty memory lots hard drive great graphics	hard drive	33--43	1	it hard drive great graphics	1.0
+1721	2917_1	the notebook lacking hdmi port s video port would enable one hook tv	s video port	42--54	-1	lacking hdmi port s video port	0.0
+1722	2531_2	love stability mac software operating system	operating system	43--59	1	stability mac software operating system	0.0
+1723	2307_0	the toshiba net book operates well	operates	21--29	1	net book operates well	1.0
+1724	1221_1	i loving netbook amazing screen display small light 1 week stopped opening web pages even installing new browsers eventually started giving blue screen crashing every time i booted	display	63--70	1	loving amazing screen display small light blue screen	1.0
+1725	676_0	super fast processor really nice graphics card	processor	11--20	1	super fast processor really nice graphics	1.0
+1726	3049_1	yeah course smarty pants fix software compared early 2011 edition i see inbuilt applications crashing prompted send report apple i promptly	software	42--50	-1	fix software edition	0.0
+1727	1524_0	if website ever freezes rare really easy force quit	force quit	62--72	1	freezes rare really easy force quit	1.0
+1728	2304_1	3 usb ports 1 sd memory card reader sd memory car expansion	sd memory card reader	22--43	0	ports 1 sd memory card reader sd memory expansion	0.0
+1729	1839_0	the salesman talked us computer away another looking nothing problems software problems not happy	software	121--129	-1	problems software problems not happy	-1.0
+1730	2436_0	it also not bluetooth	bluetooth	22--31	-1	it also not bluetooth	0.0
+1731	2573_0	i upgraded memory replaced base windows 7 starter win 7 home runs fine	memory	15--21	0	upgraded memory	0.0
+1732	1691_0	the paint wears easily due keyboard farther back usual	paint	4--9	-1	the paint wears	0.0
+1733	2592_0	i big fan netbooks one well designed	designed	62--70	1	i big netbooks designed	0.0
+1734	834_3	this laptop looks great surface 17 inch screen good price point nice appearance boots quickly runs fast etc	boots	93--101	1	screen boots quickly	0.0
+1735	2508_1	pc users use powerpoint program slide show presentation mac users utilize keynote	powerpoint program	17--35	0	powerpoint program slide	0.0
+1736	1064_2	for bluetooth work properly must install launch manager drivers applications dvd not show reload	launch manager	57--71	0	launch manager dvd	0.0
+1737	1684_1	browsing also no problem i used itunes usually slows pc	itunes	50--56	1	used itunes	0.0
+1738	2121_0	they also use two totally different operating systems	operating systems	36--53	0	use two totally different operating systems	0.0
+1739	828_1	it loaded windows vista home premium delivered 1gb ram dog	1gb ram	69--79	-1	delivered ram dog	0.0
+1740	909_1	apparently screen 2 little screws screen gets moved back forth come loose	screen	67--73	0	screen 2 little screws screen gets moved	-1.0
+1741	2143_2	quality display i surprised performance quality hp laptop	quality	58--65	1	quality laptop	0.0
+1742	162_2	awesome cooling system much better grafts card ati 5870 8gb ram led backlit screen	led backlit screen	73--91	1	grafts ati 5870 ram led backlit screen	0.0
+1743	2357_0	i no problems unlike hardware defects past models	hardware	43--51	-1	no unlike hardware	-1.0
+1744	1379_0	some problems fixed purchase new software no guarantee	software	47--55	-1	fixed purchase new software guarantee	1.0
+1745	2858_1	like price operation	operation	19--28	1	like price operation	1.0
+1746	1744_1	supplied software the software comes machine greatly welcomed compared windows comes	software	23--31	1	supplied software the software comes welcomed comes	1.0
+1747	2105_0	it software speed enable amazing things	software	5--13	1	software speed	0.0
+1748	2114_0	i needed driver hp would not help paying $50	driver	11--17	0	driver hp	0.0
+1749	2456_1	its good playing apps facebook watching movies	playing	13--20	1	its good playing apps	1.0
+1750	2987_0	it works fine wireless not problems	works	3--8	1	it works fine wireless problems	-1.0
+1751	313_3	i also purchased iwork go programs word processing spreadsheets presentations similar microsoft office	word processing	60--75	0	go word processing spreadsheets	0.0
+1752	2301_0	first got thought size joke	size	34--38	-1	size joke	1.0
+1753	2980_0	i barely use usb devices not stay connected properly	usb devices	21--32	-1	usb devices stay	0.0
+1754	592_1	my power supply cord developed exposed wires within first year ownership covered applecare warranty plan	applecare warranty plan	106--129	1	wires within first year ownership covered applecare warranty plan	0.0
+1755	1595_2	its pretty fast not hiccups i using web browsing uploading photos watching movies 720p occasion creating presentations	watching movies	98--113	1	using watching movies	0.0
+1756	799_0	top customer service center middle east	customer service center	28--51	-1	top customer service center middle east	1.0
+1757	592_0	my power supply cord developed exposed wires within first year ownership covered applecare warranty plan	power supply cord	3--20	-1	my power supply cord developed	0.0
+1758	2677_0	as laptop not purchased software options comes lot i consider useless applications	software options	38--54	-1	not purchased software options comes	0.0
+1759	2824_1	simple use great graphics	use	10--13	1	simple use great graphics	1.0
+1760	313_1	i also purchased iwork go programs word processing spreadsheets presentations similar microsoft office	programs	47--55	0	go programs	0.0
+1761	1015_0	the computer good product repair depot stinks	repair depot	46--58	-1	the computer good product repair depot stinks	1.0
+1762	2377_0	the video chat thing iffy im sure update next version macbook book quality better	video chat	4--14	-1	video chat thing	0.0
+1763	403_0	first screen goes completely	screen	10--16	-1	first screen goes	0.0
+1764	2479_0	it much streamlined system adding programs using internet things everyone computer	programs	48--56	0	adding programs	0.0
+1765	2221_3	of course i also several great software packages came free including iwork garageband imovie	imovie	107--113	1	garageband imovie	0.0
+1766	719_2	it easy use keyboard easily accommodates large hands weight fantastic	use	14--17	1	it easy use accommodates weight fantastic	1.0
+1767	2809_2	i love windows 7 give toshiba credit unless get serious ergonomics making required connections less obtrusive looking different manufacturer next time	connections	125--136	-1	required connections less obtrusive looking	0.0
+1768	1811_0	the mac snow leopard o s extremely easy use although different win xp visa win7	mac snow leopard o s	4--24	1	the mac snow leopard o s extremely easy use	1.0
+1769	1142_0	and one point blame installing bad memory stick i upgrade memory first time purchase laptop i bought memory stick recommended	memory	86--92	0	installing bad memory stick memory first time memory stick	-1.0
+1770	2290_1	i love dock i simply drop file onto particular program program simply open file	program	69--76	0	simply file onto particular program program simply open file	0.0
+1771	207_0	learning keyboard shortcuts took minutes get used shortcuts windows machines	keyboard shortcuts	20--38	1	learning keyboard shortcuts took shortcuts machines	0.0
+1772	1216_0	now machine connect toshiba says replace connection card may warranty repair 30 days i warranty even though constant 5 month occupance since i bought netbook	connection card	73--88	0	connection card warranty warranty	0.0
+1773	536_1	i sorry disappointed discover hp i thought reputable company honor warrenty fan blade fell apart	fan blade	122--131	-1	warrenty fan blade fell	1.0
+1774	162_1	awesome cooling system much better grafts card ati 5870 8gb ram led backlit screen	grafts card	38--50	1	awesome system grafts card led	1.0
+1775	506_0	with notes saying replaced hard drive	hard drive	36--46	0	replaced hard drive	-1.0
+1776	1424_1	my wireless system would not recognize windows 7 i get online find	windows 7	39--48	0	recognize windows 7 find	0.0
+1777	745_2	called tech support got usual acer we support software $$$ help i explained no software involved booting	booting	145--152	-1	involved booting	0.0
+1778	1799_1	the sata controller motherboard chip lets cpu talk hard drive	motherboard chip	28--44	0	controller motherboard chip lets	0.0
+1779	1126_0	the screen framed half full inch margin obviously unnecessary reduces screen size increases bulk	screen	4--10	-1	the screen framed full margin obviously unnecessary reduces screen increases	0.0
+1780	152_0	the touch pad among best	touch pad	4--13	1	the touch pad best	1.0
+1781	678_0	plenty storage 250 gb though i upgrade ram	storage	14--21	1	plenty storage gb	0.0
+1782	2071_2	so i called customer support good went safety feature not affect performance i chose hide message	safety feature	91--105	0	went safety feature not affect	1.0
+1783	337_0	however multi touch gestures large tracking area make external mouse unnecessary unless gaming	multi touch gestures	13--33	1	multi touch gestures large area make	0.0
+1784	1639_0	the software amazing	software	4--12	1	the software amazing	1.0
+1785	1856_0	they really worlds worst repair service	repair service	42--56	-1	worlds worst repair service	-1.0
+1786	2811_1	fan vents side no cooling pad needed great feature	cooling pad	29--40	0	side no cooling pad needed	-1.0
+1787	1743_3	but sitting lap desk front looks big enough could im used lenovo 10 tablet plus great size i want unplug external keyboard mouse monitor take i take photos video	monitor	219--226	0	want unplug external keyboard monitor take take	1.0
+1788	3064_0	the price another driving influence made purchase laptop	price	4--9	1	the price driving influence made	0.0
+1789	2782_1	keyboard alright plate around cheap plastic makes hollow sound using mouse command buttons	plate	42--47	-1	alright plate cheap plastic	1.0
+1790	1173_0	no problem ordering shipping way	shipping	33--41	1	ordering shipping way	0.0
+1791	348_1	love size computer since play games	games	45--50	0	love since play games	1.0
+1792	191_0	3 horrible customer support	customer support	12--28	-1	3 horrible customer support	-1.0
+1793	1956_0	actually i noticed one sales floor also sound	sound	68--73	-1	noticed floor also sound	0.0
+1794	1846_0	dealing support drone end chat sheer torture	support	19--26	-1	dealing support drone sheer	1.0
+1795	1258_0	it seemed nice laptop except i not able load garmin gps software microsoft office 2003	garmin gps software	68--87	-1	garmin gps software office 2003	0.0
+1796	2313_2	startup 30 seconds shutdown 2 4 seconds resume sleep 0 2 seconds	resume sleep	54--71	0	startup seconds seconds resume sleep seconds	0.0
+1797	353_0	from build quality performance everything sub par i would expected apple	build quality	9--22	-1	from build quality performance	0.0
+1798	836_0	the ac power port becomes loose time	ac power port	4--17	-1	the ac power port becomes	0.0
+1799	25_0	windows 7 starter terrific no change background i need i use school work	windows 7 starter	0--17	1	windows 7 starter terrific	1.0
+1800	2864_1	i love windows 7 vast improvement vista	vista	49--54	-1	windows 7 vast improvement vista	1.0
+1801	2811_2	fan vents side no cooling pad needed great feature	feature	55--62	1	needed great feature	1.0
+1802	2247_0	ilife easily compatible microsoft office send receive files pc	ilife	0--5	1	ilife easily compatible send	1.0
+1803	2487_2	it fast booting shutting connection internet	shutting	24--37	1	booting shutting	0.0
+1804	1553_1	great battery speed display	speed	15--20	1	great battery speed	1.0
+1805	2868_1	true quality great price	price	24--29	1	true quality great price	1.0
+1806	107_0	my laptop no battery	battery	21--28	-1	laptop no battery	-1.0
+1807	2781_0	the speakers terrible probably cheapest ones i ever seen laptop planning listen music i suggest get something better	speakers	4--12	-1	the speakers terrible ones listen	-1.0
+1808	463_0	spent 2 hours phone hp technical support	hp technical support	28--48	0	phone hp technical support	1.0
+1809	1036_1	you toss wifi card replace sort network capability	wifi card	25--34	-1	wifi card replace	0.0
+1810	652_0	it great laptop ran great really fast	ran	23--26	1	it great laptop ran great really fast	1.0
+1811	1606_1	i also not like loud noises made bottom computer would get really hot	bottom computer	55--77	-1	bottom computer get really hot	0.0
+1812	194_0	4 laptop still not work blue screen within week	work	24--28	-1	laptop still not work blue screen	0.0
+1813	486_5	that included extra sony sonic stage software speakers subwoofer i got was worth money bluetooth mouse supposedly bluetooth enabled computer extended life battery docking port	bluetooth mouse	120--135	0	worth money bluetooth mouse bluetooth port	1.0
+1814	745_0	called tech support got usual acer we support software $$$ help i explained no software involved booting	software	61--69	-1	software help explained no software involved	1.0
+1815	1369_0	this review windows vista system	windows vista system	20--40	0	this review windows vista system	0.0
+1816	1997_2	might something deep within windows i unable create disk image hard drive	disk image	72--82	-1	unable create disk image	1.0
+1817	2083_0	it priced reasonable works well right box	priced	5--11	1	it priced reasonable works right box	0.0
+1818	915_0	a month ago freaking motherboard died	motherboard	32--43	-1	freaking motherboard died	-1.0
+1819	2765_0	i finally decided laptop right price i need	price	58--63	1	decided laptop right price need	0.0
+1820	160_0	they offer best warranty business 3rd party like toshiba	warranty	20--28	1	warranty business	0.0
+1821	1216_1	now machine connect toshiba says replace connection card may warranty repair 30 days i warranty even though constant 5 month occupance since i bought netbook	warranty	110--118	-1	connection card may warranty repair days i warranty occupance i	0.0
+1822	3023_1	the reflectiveness display minor inconvenience work controlled lighting environment like i prefer dark crank brightness	brightness	167--177	0	prefer dark crank brightness	1.0
+1823	1706_0	my main reason convert imovie program	imovie program	34--48	1	convert imovie program	0.0
+1824	1752_1	however i may inadvertently thrown one batteries shipping carton	shipping carton	75--90	0	batteries shipping carton	0.0
+1825	523_1	i guess good thing came speakers subwoofer	subwoofer	77--86	1	came speakers subwoofer	0.0
+1826	3073_0	the best thing laptop price along newer features	price	40--45	1	the best thing laptop price features	1.0
+1827	3062_0	the screen nice images comes clear keyboard fit feels right	screen	4--10	1	the screen nice images comes clear	1.0
+1828	1801_1	if ever see spinning beach ball come think check activity monitor app see disk throughput temporarily dropped zero	spinning beach ball	21--39	-1	spinning beach ball come think	0.0
+1829	3023_0	the reflectiveness display minor inconvenience work controlled lighting environment like i prefer dark crank brightness	display	26--33	-1	reflectiveness display minor work	0.0
+1830	255_1	there small red circle next x middle i click says consider replacing battery not hold full charge	charge	156--162	-1	hold full charge	0.0
+1831	2490_0	2nd best computer world one way computer might become best needs upgrade patches make less easier people hack	patches	110--117	-1	patches make	0.0
+1832	2080_2	even though running snow leopard 2 4 ghz c2d bit antiquated cpu thus occasional spinning wheel would appear running office mac applications word excel	office mac applications	147--170	-1	office mac applications excel	1.0
+1833	2675_0	i static output i reduce sound output quality fm opposed default cd	sound output quality	52--72	-1	static output sound output quality fm	0.0
+1834	547_0	it faster processor ram	processor	16--25	1	it faster processor ram	0.0
+1835	1193_0	speaking browser problems	browser	16--23	-1	speaking browser problems	-1.0
+1836	1417_3	the board bad connector power supply shortly warrenty expires power supply start issues	warrenty	72--80	-1	warrenty expires	0.0
+1837	153_0	the screen huge colorful no led backlighting	screen	4--10	1	screen huge colorful	1.0
+1838	2953_0	the nortons virus scan short time unlike others usually good year	nortons virus scan	4--22	-1	the nortons virus scan short time others usually good year	1.0
+1839	205_0	images crisp clean	images	0--6	1	images crisp clean	1.0
+1840	2479_2	it much streamlined system adding programs using internet things everyone computer	using internet	58--76	0	streamlined using internet computer	0.0
+1841	2306_1	overall would recommend anybody tell want burn music play video games buy cd drive	video games	107--118	0	music play video games buy	1.0
+1842	350_0	also keyboard not light unless sitting room light cant see anything thats bad boyfriend tends watch tv dark night leaves no way seeing keyboard	keyboard	9--17	-1	also keyboard not light light way seeing keyboard	0.0
+1843	1913_0	this process continued repeat mother board replaced 4 times hard drive replaced 3 times	mother board	52--64	-1	repeat mother board replaced replaced	0.0
+1844	1540_0	it even great webcam skype works well	webcam	20--26	1	it even great webcam well	1.0
+1845	676_1	super fast processor really nice graphics card	graphics card	37--50	1	super fast processor really nice graphics card	1.0
+1846	1406_0	many classmates computers hard drives crashed	hard drives	32--43	-1	many computers hard drives crashed	-1.0
+1847	1819_0	it come software installed outside windows media price i pleased condition overall product	software	24--32	-1	come software installed	0.0
+1848	1595_1	its pretty fast not hiccups i using web browsing uploading photos watching movies 720p occasion creating presentations	uploading photos	80--96	1	using uploading photos	0.0
+1849	1043_0	support lackluster i want refund	support	0--7	-1	support lackluster want	1.0
+1850	3020_0	it everything i hoped would look feel standpoint somehow bit sturdy	look feel standpoint	46--70	1	hoped would look feel standpoint somehow bit sturdy	1.0
+1851	2160_0	fully charged macbook pro last five hours unplugged	charged	6--13	1	fully charged unplugged	-1.0
+1852	1612_0	the graphics screen stunning although i pc person i able understand use mac fairly quickly	graphics	4--12	1	graphics screen	0.0
+1853	1064_0	for bluetooth work properly must install launch manager drivers applications dvd not show reload	bluetooth	8--17	0	bluetooth work	0.0
+1854	982_1	then i fixed dc jack inside unit rewired dc jack outside laptop replaced power brick	dc jack	61--68	0	dc jack unit rewired dc jack outside laptop replaced	0.0
+1855	2731_0	the first one sent touchpad work the second sent usb work the third sent touchpad work the fourth sent hasn arrived yet	touchpad	20--28	-1	touchpad work usb work touchpad work	0.0
+1856	761_0	with today company fighting marketshare shame asus get away inept staff answering telephone	staff	98--103	-1	inept staff telephone	0.0
+1857	335_2	the operating system user interface intuitive large multi touch track pad amazing	multi touch track pad	73--94	1	interface intuitive large multi touch track pad amazing	1.0
+1858	2773_0	i purchase spy ware nortell privacy protection	spy ware	24--32	0	spy ware protection	0.0
+1859	1008_0	ive call tech support many times	tech support	16--28	0	call tech support	1.0
+1860	1623_0	with mac computer i free time i wait windows boot shut viruses associated windows	windows	70--77	-1	wait windows associated windows	0.0
+1861	1528_0	i call questions issues helped free even without warranty	warranty	101--109	0	helped free without warranty	1.0
+1862	2260_0	the magnetic plug power charging power cord great i even put test accident excellent innovation	magnetic plug power charging power cord	4--46	1	the magnetic plug power charging power cord great put	1.0
+1863	2697_2	i also problem touchpad caused mouse pointer jump screen	mouse pointer	55--68	-1	mouse pointer screen	0.0
+1864	2073_0	also speakers not loud but netbook	speakers	9--17	-1	also speakers not loud but netbook	0.0
+1865	2553_1	he replaced hard drive twice course pay antivirus software every year	antivirus software	72--90	-1	twice course pay antivirus software year	-1.0
+1866	1120_0	i hope edit next hours i going try install copy windows 7	windows 7	87--96	0	install windows 7	0.0
+1867	3035_0	it works really well	works	3--8	1	it works really well	1.0
+1868	2460_0	it come good use finances scheduling parents business expenses definitely amazing gaming	gaming	118--124	1	good finances definitely amazing gaming	1.0
+1869	2315_0	os x solid lots innovations quick look save heaps time	os x	0--4	1	os x solid lots	1.0
+1870	1060_0	you need want reload os i recommend start fresh optimal	os	45--47	0	want reload os recommend	1.0
+1871	1765_0	it lot memory great battery life	memory	16--22	1	it lot memory great life	1.0
+1872	2433_0	you may need special order bag	bag	32--35	0	need special order bag	1.0
+1873	448_0	also display exceptional	display	9--16	1	also display exceptional	0.0
+1874	1599_2	i not experience lot heat coming however i would highly suggest purchasing stand however due nature design macbook one large heat sink	heat sink	182--191	-1	experience lot heat coming macbook one large heat sink	0.0
+1875	1562_1	the difference apple keyboard pc keyboard took bit tim get used overall worth	pc keyboard	44--57	0	the difference apple keyboard pc keyboard took	0.0
+1876	1062_0	the thing updated video set	video	42--47	-1	updated video set	0.0
+1877	2236_0	also may need charge day medium use every thing fast easy mac size look feature attracted	size	101--105	1	easy size feature	1.0
+1878	469_1	i gave daughter i hated screen hated no cd drive least play cd i wanted listen music schoolwork	cd drive	79--87	-1	hated hated no cd drive play cd wanted	-1.0
+1879	2595_0	keyboard also nice solid feel	keyboard	0--8	1	keyboard also nice solid feel	1.0
+1880	2005_2	high quality killer gui extremely stable highly expandable bundled lots good applications easy use absolutely gorgeous	applications	118--130	1	lots good applications absolutely gorgeous	1.0
+1881	2578_0	additional caveat base installation comes toshiba specific software may may not user liking	base installation	23--40	-1	additional caveat base installation comes	0.0
+1882	2210_0	it also lightweight making transporting computer easy	transporting	36--48	1	making transporting computer easy	1.0
+1883	1040_0	maximum sound nearly loud	maximum sound	0--13	-1	maximum sound nearly loud	0.0
+1884	2075_0	i first time mac buyer amazed features ease use mac offers	features	43--51	1	amazed features ease	1.0
+1885	112_0	the screen gets smeary dusty quickly noticeable	screen	4--10	-1	the screen gets smeary dusty	0.0
+1886	1540_1	it even great webcam skype works well	skype	32--37	1	skype works	0.0
+1887	1649_0	and iphone ipod touch connect download songs high speed	speed	88--93	1	connect high speed	0.0
+1888	1435_0	it takes approximately 3 tries get site closing browser reopening actually works	browser	78--85	0	browser reopening	0.0
+1889	460_1	then 4 months charger stopped working i forced go buy new hardware keep computer running	hardware	92--100	-1	new hardware keep	0.0
+1890	2033_0	i wanted purchase extended warranty refused knew trouble	extended warranty	25--42	0	wanted purchase extended warranty refused	-1.0
+1891	1659_1	garageband easy work like apple applications i experience	apple applications	52--70	1	like apple applications experience	1.0
+1892	988_0	windows vista makes computer almost unusable online service	windows vista	0--13	-1	windows vista makes	0.0
+1893	486_2	that included extra sony sonic stage software speakers subwoofer i got was worth money bluetooth mouse supposedly bluetooth enabled computer extended life battery docking port	subwoofer	72--81	1	included extra software subwoofer got was worth money	1.0
+1894	937_0	i also able install use photoshop aftereffects programs easily	photoshop	40--49	1	photoshop programs	0.0
+1895	2797_0	oh thats not bad enough come recovery cd make one know buy one buy cost $25 two cds	recovery cd	54--65	-1	recovery cd make	0.0
+1896	206_0	the i5 blows desktop water comes rendering videos	i5	4--6	-1	i5 water	0.0
+1897	2506_0	i originally concerned i view work i done college mac pc formatting i even thrilled learn programs like ilife iwork allow convert pc documents readable files macs	programs	156--164	1	programs ilife iwork allow	1.0
+1898	2572_0	very long life battery 10 11 hours depending configure power level settings	battery	15--22	1	very long life battery hours	0.0
+1899	1221_0	i loving netbook amazing screen display small light 1 week stopped opening web pages even installing new browsers eventually started giving blue screen crashing every time i booted	screen	52--58	1	screen display giving blue screen	1.0
+1900	1056_1	before i reloaded windows 7 ultimate used downloaded drivers acer site	windows 7 ultimate	24--42	0	windows 7 ultimate used	0.0
+1901	475_0	they need stop outsourcing send complaint calls us based customer service agents live united states	customer service agents	71--94	-1	customer service agents live	0.0
+1902	1408_0	yes computer light weight less expensive average laptop pretty self explanatory use	use	110--113	1	weight less expensive average laptop self explanatory use	0.0
+1903	1776_1	the macbook arrived nice twin packing sealed box functions works great	functions	74--83	1	functions works great	1.0
+1904	3016_0	i upgraded old macbook lion i kind knew i getting able enjoy awesome new multi touch features	multi touch features	131--151	1	able enjoy awesome new multi touch features	1.0
+1905	1373_3	i noticed windows new system called windows 7 us vista users they get bugs vista investing new system	windows	10--17	0	windows new system new system	0.0
+1906	87_2	it easy operate i already ordered software gadgets new rolls royce laptops	gadgets	67--74	0	software gadgets new laptops	0.0
+1907	1182_0	they translate mac even word resulting ton run sentences	word	41--45	-1	mac even word	0.0
+1908	2534_0	but machine awesome ilife great i love snow leopard x	ilife	31--36	1	but awesome ilife great love	1.0
+1909	1374_1	also need talk representative microsoft charge i believe robbery since charged enormous amounts badly designed system people would went xp could	system	170--176	-1	designed system	0.0
+1910	2692_0	laptop advertised 15 casing looks like 17	casing	38--44	-1	casing looks	0.0
+1911	3026_1	the first full charge battery got 2 full hours	full charge	10--21	-1	first full charge battery full hours	0.0
+1912	1097_2	i actually hard drive replaced twice mother board dvd drive twice finally agreed replace all of this in less than 1 1 2 years	dvd drive	74--83	-1	hard drive replaced twice dvd drive twice	-1.0
+1913	3065_0	i ts nice higher end laptops fits budget features i need	features	74--82	1	ts nice laptops budget features need	1.0
+1914	2077_1	the screen shows great colors	colors	23--29	1	shows great colors	1.0
+1915	625_0	no temporary replacement replacements many computers problems nvidia chipset inquired status repair	nvidia chipset	101--115	-1	nvidia chipset repair	0.0
+1916	821_0	also i lot trouble keys sticking not type correctly	keys	44--48	-1	also trouble keys sticking	-1.0
+1917	1995_0	i edit burn dvd lot video i obviously could not live non functioning drive	drive	92--97	-1	live non functioning drive	0.0
+1918	1801_0	if ever see spinning beach ball come think check activity monitor app see disk throughput temporarily dropped zero	disk throughput	124--139	0	disk throughput dropped	0.0
+1919	313_4	i also purchased iwork go programs word processing spreadsheets presentations similar microsoft office	spreadsheets	77--89	0	processing spreadsheets presentations	0.0
+1920	1770_2	it far exceeded expectations power storage ability	ability	60--68	1	storage ability	1.0
+1921	1933_1	i got back told motherboard replaced i second motherboard within 3 months	motherboard	95--106	-1	motherboard replaced second motherboard months	0.0
+1922	2617_0	it really perfect work play	play	34--38	1	perfect work play	1.0
+1923	1686_0	another thing i might add battery life excellent	battery life	33--45	1	add battery life excellent	1.0
+1924	2876_1	the games included good games	games	33--38	1	the games included good games	1.0
+1925	109_0	then ceased charging	charging	15--23	-1	ceased charging	0.0
+1926	404_0	then hp sends back hardware screwed not able connect	hardware	37--45	-1	hardware screwed	-1.0
+1927	1746_3	screen keyboard mouse if cant see spending extra money jump mac beautiful screen responsive island backlit keyboard fun multi touch mouse worth extra money alone	island backlit keyboard	132--155	1	screen keyboard mouse responsive island backlit keyboard multi mouse	1.0
+1928	7_0	and best part even comes free printer certain promotion offer going course	printer	52--59	1	comes free printer	1.0
+1929	2741_0	i usb connect use not compatible	usb connect	8--19	-1	i usb connect use not compatible	0.0
+1930	640_0	they say invalidate warranty hard drive i really understand anyway	warranty	39--47	-1	invalidate warranty drive	0.0
+1931	90_0	the battery never held charge longer one hour within two months stopped holding charge ten minutes	battery	4--11	-1	the battery held	0.0
+1932	2005_3	high quality killer gui extremely stable highly expandable bundled lots good applications easy use absolutely gorgeous	use	143--146	1	lots easy use absolutely gorgeous	1.0
+1933	687_3	good keyboard long battery life largest hard drive windows 7	windows 7	57--66	1	good keyboard largest hard drive windows 7	1.0
+1934	2644_1	it much easier navigate operating system find files runs lot faster	runs	84--88	1	navigate system find runs lot faster	0.0
+1935	459_1	after replacing hard drive battery stopped working 3 months use frustrating	battery	35--42	-1	battery stopped use frustrating	-1.0
+1936	2511_0	bigger hd better graphics card bid hd	hd	7--9	1	bigger hd graphics bid hd	0.0
+1937	2934_0	the internet speed spectacular	internet speed	4--18	1	the internet speed spectacular	0.0
+1938	1085_0	when typing letters and spaces are frequently omitted requiring the user to redo many words and sentences	typing	5--11	-1	when typing letters and spaces are frequently omitted and	0.0
+1939	1076_1	system loosing 20% performance	system	0--6	-1	system loosing	0.0
+1940	714_0	i say enough satisfied i product help aftermarket	product help aftermarket	52--80	1	i say enough satisfied i product help aftermarket	1.0
+1941	1417_0	the board bad connector power supply shortly warrenty expires power supply start issues	board	6--11	-1	board bad supply supply	-1.0
+1942	2395_2	it easy use good quality good price	use	14--17	1	it easy use good good price	1.0
+1943	2091_0	one drawback i wish keys backlit	keys	25--29	-1	wish keys backlit	1.0
+1944	204_0	the screen resolution exactly i looking	screen resolution	4--21	1	the screen resolution exactly	0.0
+1945	900_0	then within 5 months charger crapped	charger	27--34	-1	charger crapped	0.0
+1946	326_0	i would definitely recommend market easy use stylish fun awesome computer	use	74--77	1	recommend market easy use stylish fun awesome computer	1.0
+1947	599_1	it absolutely expensive pc laptops ease use security minimal problems arisen make well worth price tag	security	75--83	1	it security minimal problems	-1.0
+1948	1407_0	my computer froze several occasion buttons randomly would fall even moments computer would refuse turn	buttons	43--50	-1	buttons fall	0.0
+1949	1530_0	its also fun use	use	16--19	1	fun use	1.0
+1950	803_0	it rarely works incredibly slow	works	10--15	-1	it rarely works incredibly slow	0.0
+1951	2173_2	with programs came ilife iwork i set beginning	iwork	59--64	0	ilife iwork	0.0
+1952	2129_0	it stamped not pieces therefore stronger resilient frame	frame	74--79	1	pieces stronger resilient frame	1.0
+1953	3055_0	it 1 ghz faster processor stock 500gb hard drive	processor	23--32	1	it faster processor drive	0.0
+1954	2874_0	the delivery fast i would not hesitate purchase laptop	delivery	4--12	1	the delivery fast	0.0
+1955	1746_5	screen keyboard mouse if cant see spending extra money jump mac beautiful screen responsive island backlit keyboard fun multi touch mouse worth extra money alone	mouse	22--27	0	keyboard mouse beautiful screen responsive backlit keyboard touch mouse	1.0
+1956	1984_3	who love dvd burner 80 gigabyte hd fairly new graphics chip as i soon discovered though reason similarly configured sony toshiba machines cost use higher quality components faster better configured end lasting lot longer	dvd burner	20--30	1	love dvd burner	1.0
+1957	1480_0	my friend reports notebook astonishing performance picture quality ease use	performance	49--60	1	notebook astonishing performance quality ease	1.0
+1958	1228_0	the computer currently west virginia doe method shipping chosen toshiba	shipping	64--72	-1	computer currently west virginia doe method shipping	0.0
+1959	2221_0	of course i also several great software packages came free including iwork garageband imovie	software packages	37--54	1	several great software packages came free	1.0
+1960	1302_0	i guess technical person	technical person	19--35	0	guess technical person	0.0
+1961	608_1	reinstall standard os cd proprietary hardware drivers	proprietary hardware drivers	47--75	-1	cd proprietary hardware drivers	0.0
+1962	2491_1	first things first macbook pro many applications make life easier unlike windows computers	windows	86--93	-1	windows computers	0.0
+1963	378_0	i believe long battery lasted single charge	battery	32--39	1	long battery lasted	0.0
+1964	2962_2	this likely due poor grounding isolation components i hoping fixed ground loop isolator i still expected better product quality price range	price range	193--204	-1	expected better product quality price range	1.0
+1965	1561_0	with awesome graphics assuring security perfect	graphics	13--21	1	with awesome graphics security perfect	1.0
+1966	2709_0	keys stick periodically i havent laptop 45 days yet	keys	0--4	-1	keys stick	0.0
+1967	1843_0	i could not find phone number anywhere call actual live person tech support result online chat	tech support	77--89	-1	tech support result	1.0
+1968	277_1	the internet locked froze every time trying used command prompt would not work	command prompt	79--93	-1	command prompt work	0.0
+1969	1338_0	the brand tarnished heart	brand	4--9	-1	the brand tarnished	0.0
+1970	12_0	for $ price special offer great laptop	price	12--17	1	for $ price special offer	1.0
+1971	913_0	a month later reinstall os vista	os vista	33--43	-1	later reinstall os vista	0.0
+1972	2466_0	i love keyboard	keyboard	11--19	1	love keyboard	1.0
+1973	151_0	the keyboard top notch	keyboard	4--12	1	keyboard top	1.0
+1974	732_0	although believe windows operating system may fault problems	windows operating system	27--51	-1	windows operating system fault	-1.0
+1975	35_0	once open leading edge razor sharp	leading edge	15--27	-1	once open leading edge razor sharp	0.0
+1976	2947_0	wonderful features	features	10--18	1	wonderful features	1.0
+1977	1069_0	the bluetooth not fingerprint reader driver would software would hang installation 1 2 way done	bluetooth	4--13	-1	the bluetooth not	0.0
+1978	22_0	ease use one benefits i love mac	use	8--11	1	ease use benefits	1.0
+1979	1097_1	i actually hard drive replaced twice mother board dvd drive twice finally agreed replace all of this in less than 1 1 2 years	mother board	51--63	-1	mother board agreed	1.0
+1980	2547_0	the os still fast day laptop purchased continues run flawlessly	os	4--6	1	os still fast laptop	0.0
+1981	408_0	i v spent much shipping i would buy new netbook course different brand	shipping	22--30	-1	spent much shipping buy	0.0
+1982	983_1	disappointing lovely screen reasonable price	price	59--64	1	disappointing lovely screen reasonable price	1.0
+1983	2666_0	the problem lack screen resolutions	screen resolutions	30--48	-1	lack screen resolutions	-1.0
+1984	1101_0	strengths well shaped weaknesses a bad videocard	videocard	39--48	-1	weaknesses a bad videocard	-1.0
+1985	670_0	ease use one benefits i love mac	use	8--11	1	ease use benefits	1.0
+1986	1552_0	was much worth price paid	price	24--29	1	was much worth price paid	1.0
+1987	1191_1	tech support tells latter problem power supply problem offered fix happens	power supply	46--58	-1	tells latter problem power supply problem offered	-1.0
+1988	2993_1	it good speed plenty hard drive space	hard drive space	32--48	1	it good plenty hard drive space	1.0
+1989	2731_2	the first one sent touchpad work the second sent usb work the third sent touchpad work the fourth sent hasn arrived yet	touchpad	90--98	-1	touchpad work usb work touchpad work	0.0
+1990	2157_0	this computer exceptionally thin screen size processing power	screen size	45--56	1	computer exceptionally thin screen size power	0.0
+1991	2167_0	there no viruses spyware worry like windows computer	windows	57--64	-1	windows computer	0.0
+1992	1689_0	it good know i mobilize without worry battery life	battery life	73--85	1	mobilize without worry battery life	1.0
+1993	1599_1	i not experience lot heat coming however i would highly suggest purchasing stand however due nature design macbook one large heat sink	design	136--142	-1	due nature design macbook	0.0
+1994	391_1	i paid extra memory 17 inch screen well top line dvd cd burners	17 inch screen	32--46	0	paid 17 inch screen well top burners	1.0
+1995	2234_2	comes new osx comes new features makes use easy	use	74--77	1	comes comes use easy	1.0
+1996	617_0	no luck although i waited hours phone visited machouse stated call center due many phonecalls difficult believe	call center	90--101	-1	call center due many phonecalls difficult believe	-1.0
+1997	2362_0	quality display i love hp computer printer buy	quality display	0--15	1	quality display love buy	1.0
+1998	1053_0	adjust sensitivity since not responsive begin	sensitivity	11--22	-1	adjust sensitivity since not responsive begin	-1.0
+1999	2236_1	also may need charge day medium use every thing fast easy mac size look feature attracted	look	110--114	1	easy look feature	1.0
+2000	1076_0	system loosing 20% performance	performance	31--42	-1	loosing performance	0.0
+2001	2990_2	right size weight portability	portability	26--37	1	size weight portability	0.0
+2002	3_1	it nice look keys easy type	look	16--20	1	it nice look easy type	1.0
+2003	1987_1	the cover dvd drive soon came mark poor construction quality	construction quality	63--83	-1	mark poor construction quality	-1.0
+2004	453_12	there several programs school office use pages numbers keynote etc music garageband photo management photo booth iphoto video editing movie making imovie etc	school office use	31--51	0	there several programs school office use pages	0.0
+2005	115_1	the battery life battery completely died course left much desired	battery	29--36	-1	battery life battery died	-1.0
+2006	1067_0	unless need bluetooth 3	bluetooth 3	20--31	0	need bluetooth 3	0.0
+2007	927_0	so may lucky get ahold someone understands no good let send back course taking chance testing see happened tell not side stuck paying repair price new one	price	301--306	-1	paying repair price	0.0
+2008	1036_0	you toss wifi card replace sort network capability	network capability	75--93	-1	replace sort network capability	0.0
+2009	722_0	other installed features certain printer software also attractive	features	16--24	1	other installed features certain software also attractive	1.0
+2010	1061_0	every driver drivers applications dvd everything need reload	driver	6--12	1	driver need	0.0
+2011	2961_1	my one complaint laptop i noticed electronic fuzz sound coming headphone jack headphones plugged	headphone jack	98--112	-1	headphone jack headphones	0.0
+2012	1080_2	also hdd secures inside using rails one set main hard drive	hard drive	76--86	0	set main hard drive	-1.0
+2013	169_0	not easy carry	carry	12--17	-1	not easy carry	1.0
+2014	70_0	it fires morning less 30 seconds i never issues freezing	fires	3--11	1	it fires morning	0.0
+2015	309_0	since i computer i used trackpad nice smooth	trackpad	48--56	1	trackpad nice smooth	1.0
+2016	1095_0	i also purchased office max max assurance no lemon clause	office max max assurance	17--45	0	purchased office max max assurance lemon clause	1.0
+2017	2645_0	i stupid pop windows even i pop ups blocked i wait 5 minutes webpage download best i run web programming software i need use without slowing	pop windows	20--34	1	i stupid pop windows even i pop blocked i i run i	-1.0
+2018	2990_1	right size weight portability	weight	15--21	1	weight portability	0.0
+2019	1535_3	however i love particular mac fast great size fantastic features like lighted keyboard easy mouse pad	mouse pad	133--142	1	features like lighted keyboard easy mouse pad	1.0
+2020	2677_1	as laptop not purchased software options comes lot i consider useless applications	applications	103--115	-1	consider useless applications	-1.0
+2021	1997_1	might something deep within windows i unable create disk image hard drive	hard drive	89--99	-1	unable create hard drive	1.0
+2022	2234_1	comes new osx comes new features makes use easy	features	50--58	1	new osx new features makes	0.0
+2023	374_0	love graphics awesome programs including garageband really cool default background	graphics	9--17	1	love graphics awesome programs cool	1.0
+2024	2955_0	it simple use i use desktop	use	19--22	1	it simple use i use desktop	0.0
+2025	2419_0	it easy go one keyboard another	keyboard	26--34	0	one keyboard another	0.0
+2026	3060_0	i mainly use email internet managing personal files pics vids etc	internet	27--35	0	email internet	0.0
+2027	2392_0	am glad i bought great netbook low price	price	45--50	1	great netbook low price	1.0
+2028	2500_0	i taught use photoshop amazed	photoshop	20--29	1	photoshop amazed	1.0
+2029	2819_1	aside trial software short battery life lack webcam great	battery life	44--56	-1	aside trial software short battery life webcam great	1.0
+2030	208_0	the trackpad easy learn navigate	trackpad	4--12	1	the trackpad learn	0.0
+2031	1986_1	i install windows within two weeks purchase soon discovered cracks screen hinges	screen hinges	95--108	-1	discovered screen hinges	0.0
+2032	1985_0	from get go m6809 unsteady operation	operation	47--56	-1	go m6809 unsteady operation	0.0
+2033	2409_1	the programs come standard leopard running system enough average person run basics	leopard running system	41--63	0	come standard leopard running system run	0.0
+2034	312_5	the computer runs fast no problems ilife software comes iphoto imovie web itunes garageband helpful well	garageband	118--128	1	iphoto garageband helpful well	1.0
+2035	1502_0	but honest i use computer anything like graphics editing complex data analysis gaming	gaming	107--113	0	editing complex data analysis gaming	0.0
+2036	354_2	the system constantly overheats battery life short case coming apart core applications i use every day work graphic artist run poorly	core applications	97--114	-1	core applications use run	0.0
+2037	334_2	it also capable moderate video editing although may need performance boost larger macbook pros heavy duty mobile video editing	mobile video editing	142--162	0	capable moderate video editing need mobile video editing	1.0
+2038	2487_1	it fast booting shutting connection internet	booting	11--21	1	it fast booting shutting internet	0.0
+2039	2219_1	the touchpad intuitive much i never want use buttons click	buttons	68--75	0	use buttons click	0.0
+2040	1208_0	5 months connect quality got worse worse	connect quality	16--31	-1	months connect quality got	0.0
+2041	950_0	the company sent whole new cord overnight apologized	cord	34--38	1	whole new cord apologized	1.0
+2042	103_0	the reality heated quickly took way long simple things like opening documents folder	opening documents folder	92--119	-1	took like opening documents folder	1.0
+2043	1372_1	we numerous problems vista adobe flash player quits uninstalled reinstalled internet explore quits lose whatever working also windows update appeared computer since got updated probably 400 times update	adobe flash player	52--70	-1	adobe flash player quits quits	0.0
+2044	697_2	the 13 macbook pro fits budget free shipping no tax ca best price get great product	budget	36--42	1	budget free shipping	1.0
+2045	1069_2	the bluetooth not fingerprint reader driver would software would hang installation 1 2 way done	software	94--102	-1	software hang	0.0
+2046	953_1	now i not tried use since disc drive replaced taking back geek squad i found accidently not used right drive replaced first one back went get correct drive	drive	167--172	-1	disc drive replaced found used right drive replaced get correct drive	0.0
+2047	2621_0	i upgraded ram 2gb i happy	ram	16--19	1	i ram i happy	1.0
+2048	1888_0	returned laptop 3rd repair came back previous problems fixed except speaker grill unit started locking use eventually would not operate	speaker grill	91--104	-1	speaker grill unit	0.0
+2049	2303_0	size actually help quite bit able fit already full backpack use restaurant food table always space consuming	size	4--8	1	size help	1.0
+2050	2916_0	the processor amd semprom 2 1 ghz bummer not power hd heavy computing	processor	4--13	-1	processor semprom	0.0
+2051	298_0	i got macbook pro i wanted stuff i need without worrying system quitting freezing minutes	system	98--104	0	worrying system	-1.0
+2052	2188_0	i would recommend computer anyone searching perfect laptop battery life amazing	battery life	84--96	1	searching perfect laptop battery life amazing	1.0
+2053	3077_0	for care noise thing really make	noise	26--31	1	noise thing	0.0
+2054	1113_0	not even safe mode boots	safe mode	9--18	-1	safe mode boots	1.0
+2055	2676_0	this big deal i noticed issue dvds media usb output	usb output	92--102	-1	big deal noticed usb output	0.0
+2056	2843_0	i enjoying quality provides great	quality	25--32	1	enjoying quality	1.0
+2057	3062_1	the screen nice images comes clear keyboard fit feels right	keyboard	56--64	1	keyboard fit	1.0
+2058	1531_3	the programs great like iphoto love editing capabilities imail incorporate address book ipod ipad imovie etc	imovie	143--149	1	ipod ipad imovie	0.0
+2059	1669_0	it like 9 pounds look past great	9 pounds	10--17	-1	like 9 pounds past great	1.0
+2060	2768_0	the thing i learn research software i would need like privacy protection warranty protection case gets broken crashes etc	software	53--61	0	learn research software need	0.0
+2061	2486_1	the real stand computer feel keyboard speed	speed	73--78	1	feel keyboard speed	0.0
+2062	526_0	it caught virus completely wiped hard drive matter hours	hard drive	47--57	-1	hard drive hours	-1.0
+2063	1923_0	eventually battery charge unless i plugged even power	battery	14--21	-1	battery charge	0.0
+2064	411_1	asus facial recognition work windows logon either	windows logon	41--54	-1	asus facial recognition work windows logon either	0.0
+2065	1075_2	it could perfect laptop would faster system memory radeon 5850 would ddr5 instead ddr3	ddr5	98--102	1	would memory radeon would ddr5 ddr3	0.0
+2066	2708_0	the start menu not easiest thing navigate due stacking	start menu	4--14	-1	the start menu not easiest	-1.0
+2067	953_2	now i not tried use since disc drive replaced taking back geek squad i found accidently not used right drive replaced first one back went get correct drive	drive	242--247	0	disc drive replaced found used right drive replaced get correct drive	0.0
+2068	2347_0	being pc user whole life taking bit time adapt os mac i finding way around	os	73--75	0	os mac	0.0
+2069	2583_0	screen brightness automatically adjusts	screen brightness	4--21	0	screen brightness adjusts	1.0
+2070	19_1	everything design os simple point	os	34--36	1	design os simple point	0.0
+2071	49_0	in due course i remove hard disc new macbook pro dump belongs trash	hard disc	31--40	-1	remove hard disc	-1.0
+2072	333_1	it graphics bad lower end macbook pro spectrum easily capable running starcraft ii games comparable graphics	graphics	151--159	0	it graphics bad end spectrum easily capable running comparable graphics	1.0
+2073	2731_1	the first one sent touchpad work the second sent usb work the third sent touchpad work the fourth sent hasn arrived yet	usb	58--61	-1	work usb work work	0.0
+2074	2349_0	the led backlit display makes pictures pop much	led backlit display	4--23	1	the led backlit display makes	0.0
+2075	1258_1	it seemed nice laptop except i not able load garmin gps software microsoft office 2003	microsoft office 2003	91--112	-1	not able load garmin gps software microsoft office 2003	0.0
+2076	451_1	it easy pick use it not take long get used mac os	use	37--40	1	it pick use it not take	0.0
+2077	1723_0	the performance awesome	performance	4--15	1	the performance awesome	1.0
+2078	446_0	i love glass touchpad	glass touchpad	11--25	1	love glass touchpad	1.0
+2079	2337_0	touch pad fine real touch pad	touch pad	4--13	1	touch pad fine real touch pad	1.0
+2080	1764_0	it features necessary college not able added onto computer	features	15--23	1	it features added	0.0
+2081	2096_1	the price premium little much start looking features worth added cash	features	70--78	1	looking features	0.0
+2082	1184_0	and printing either word processor adventure	word processor	27--41	-1	printing either word processor	0.0
+2083	1958_0	i especially like keyboard chiclet type keys	keyboard	22--30	1	keyboard keys	0.0
+2084	1418_0	toshiba aware issue unless extended warrenty bought toshiba nothing	extended warrenty	47--64	-1	extended warrenty bought	0.0
+2085	1895_2	overall i feel netbook poor quality poor performance although great battery life work	battery life	95--107	1	great battery life work	1.0
+2086	1206_0	but honest compatibility issues little quirks make think i buy pc next time	compatibility	22--35	-1	compatibility issues	0.0
+2087	2416_0	i thought white mac computers looked dirty quickly use mousepad place hands typing	mousepad	76--84	0	mousepad hands	0.0
+2088	2787_0	overall computer easy use screen perfect great computer daughter loves	screen	46--52	1	easy use screen perfect	1.0
+2089	2083_1	it priced reasonable works well right box	works	32--37	1	priced reasonable works	0.0
+2090	515_0	they said computer covered extended warranty products extended warranties taken care third parties not sony anymore	extended warranty	45--62	0	said covered extended warranty products extended warranties	0.0
+2091	2417_0	even though computer larger not make keyboard larger	keyboard	57--65	-1	larger keyboard larger	0.0
+2092	2157_1	this computer exceptionally thin screen size processing power	processing power	61--77	1	screen size processing power	0.0
+2093	1765_1	it lot memory great battery life	battery life	35--47	1	memory great battery life	1.0
+2094	2456_0	its good playing apps facebook watching movies	watching movies	44--59	1	apps facebook watching movies	0.0
+2095	1438_3	externally keys keyboard falling uses paint rubbing button mouse pad heals hands sit screen terrible glare	screen	170--176	-1	sit screen	0.0
+2096	2462_0	it fast one program open sixteen open	program	27--34	0	fast one program	0.0
+2097	2898_0	the toshiba satellite i expected price	price	60--65	1	expected price	0.0
+2098	1446_0	when i called toshiba would not anything even tried charge $35 phone call even though offer technical support	technical support	136--153	-1	offer technical support	1.0
+2099	1289_0	so i paid visit lg notebook service center alexandra road hoping make hinge tighter	lg notebook service center	22--48	0	lg notebook service center road	0.0
+2100	2350_1	i learning finger options mousepad allow quicker browsing web pages	browsing	72--80	1	quicker browsing pages	0.0
+2101	1491_0	the backlit keys wonderful working dark	backlit keys	4--16	1	the backlit keys wonderful	1.0
+2102	763_0	summary i laptop 2 months blue power adapter stops working	power adapter	64--77	-1	blue power adapter stops	-1.0
+2103	354_0	the system constantly overheats battery life short case coming apart core applications i use every day work graphic artist run poorly	battery life	37--49	-1	overheats battery life short	0.0
+2104	2913_0	screen size perfect portable use environment	screen size	0--11	1	screen size perfect portable environment	1.0
+2105	1336_1	so laptops mobile phones look chic cool the sales support terrible	look	37--41	1	so laptops mobile phones look chic cool support terrible	1.0
+2106	1614_1	i believe quality mac worth price	price	49--54	1	believe worth price	1.0
+2107	2173_0	with programs came ilife iwork i set beginning	programs	13--21	0	programs came	0.0
+2108	1349_0	they say could motherboard dell	motherboard	25--36	-1	say could motherboard	0.0
+2109	2917_0	the notebook lacking hdmi port s video port would enable one hook tv	hdmi port	26--35	-1	lacking hdmi port s video port	0.0
+2110	2274_0	we use built tools often itunes open nearly every day works great iphone	built tools	11--25	0	use built tools often itunes	0.0
+2111	2448_0	the pictures clear	pictures	4--12	1	the pictures clear	1.0
+2112	2352_0	a key contributor led mac art aspect	art aspect	44--54	1	led mac art aspect	0.0
+2113	2090_0	great product easy use great graphics	graphics	42--50	1	use great graphics	1.0
+2114	452_1	i windows linux user i love size screen big enough i use internet artwork yet small enough reasonably portable	screen	74--80	1	love size screen big enough yet small enough reasonably portable	1.0
+2115	1476_1	the image great soud excellent	soud	28--32	1	image great soud excellent	1.0
+2116	2853_0	it took toshiba tech support 4 calls 4 different techs correct problem	toshiba tech support	8--28	-1	took toshiba tech support calls	1.0
+2117	2057_0	was disappointed find model discontinued apparently known motherboard problems	motherboard	95--106	-1	discontinued motherboard problems	-1.0
+2118	2351_0	granted still new laptop comparison previous laptops desktops mac boots noticeably quicker	boots	100--108	1	mac boots quicker	0.0
+2119	2571_0	i get ton compliments size speaking someone regularly commutes bus i attest fact perfect size computer restricted width body computing room	size	34--38	1	get ton compliments size perfect size computer restricted room	1.0
+2120	2585_1	it very easy type feels great besides added feature keyboard lighted	feature	63--70	1	great feature keyboard	1.0
+2121	2455_0	the acer one computer i bought 17 screen hard find lap top bags i like big screen	17 screen	39--53	0	17 screen find like big screen	1.0
+2122	520_0	my battery went bad year half cost around eighty hundred dollars	battery	3--10	-1	my battery went	0.0
+2123	982_2	then i fixed dc jack inside unit rewired dc jack outside laptop replaced power brick	power brick	112--123	0	replaced power brick	0.0
+2124	2315_1	os x solid lots innovations quick look save heaps time	quick look	47--56	1	innovations quick look heaps time	0.0
+2125	1502_2	but honest i use computer anything like graphics editing complex data analysis gaming	complex data analysis	81--102	0	complex data analysis gaming	0.0
+2126	626_0	now main board broken wait new one	main board	4--13	-1	main board broken	-1.0
+2127	113_2	in fact somehow i never opened specks dust something got inside screen permanently behind front screen way display	display	180--187	-1	inside screen front screen way display	0.0
+2128	1977_0	i saw walmart computer $650 still knowing i know i would not buy price	price	112--117	-1	buy price	0.0
+2129	2100_3	i run windows via bootcamp couple programs i not want buy mac version like cad programs	bootcamp	18--26	0	bootcamp programs programs	0.0
+2130	533_0	i still stupid bluetooth mouse	bluetooth mouse	25--40	-1	stupid bluetooth mouse	-1.0
+2131	984_0	this keeps hard drive replaced	hard drive	28--38	-1	keeps hard drive replaced	-1.0
+2132	9_0	the apple team also assists nicely choosing computer right happy	apple team	4--14	1	the apple team assists	0.0
+2133	2581_0	its nice learn features happy sophisticated computer	features	37--45	0	nice learn features happy sophisticated computer	1.0
+2134	2065_0	after purchasing thing i find i need special interface device connect camera cannot purchased store line	interface device	62--78	-1	special interface device connect	1.0
+2135	280_0	many kinds software necessary working person not available cannot downloaded	software	14--22	-1	many software necessary person not available	0.0
+2136	2203_0	thank best buy putting computer together installing first software guys great	software	76--84	0	first software guys	0.0
+2137	1427_2	best buy 5 stars sales service respect old men familiar technology dell computers 3 stars dell support owes couple	dell support	128--140	1	dell computers dell support owes	1.0
+2138	922_0	i bought notebook 3 months if overload updates boot mgr	boot mgr	87--95	0	bought if updates boot mgr	0.0
+2139	1747_0	downfalls sharp edges	edges	17--22	-1	downfalls sharp edges	0.0
+2140	809_0	do not buy gateway computers they are junk and the warranty company is horrible	warranty company	51--67	-1	they are junk warranty company is horrible	-1.0
+2141	2969_0	the laptop easy set	set	28--34	1	laptop easy set	1.0
+2142	2243_0	it wonderful computer gaming	gaming	28--34	1	wonderful computer gaming	1.0
+2143	2645_2	i stupid pop windows even i pop ups blocked i wait 5 minutes webpage download best i run web programming software i need use without slowing	pop ups	53--60	0	i stupid pop windows even i pop ups blocked i i run i	-1.0
+2144	2537_0	needed one able carry work everyday one seems fit criteria	carry	27--32	0	needed one able carry everyday one seems	0.0
+2145	1020_0	i would tell technician i knew exactly wrong not listen i go bunch junk get tell i needed send computer	technician	17--27	-1	tell technician knew exactly wrong tell	-1.0
+2146	2927_1	another thing month left mouse key broke costed $175 send fix	costed	73--79	0	broke costed fix	-1.0
+2147	1391_1	mouse pad buttons worst ever seen	buttons	18--25	-1	mouse pad buttons worst seen	-1.0
+2148	1414_0	the graphics awful warranty even worth cheap payment computer	graphics	4--12	-1	the graphics awful warranty	-1.0
+2149	379_1	i loaded windows 7 via bootcamp works flawlessly	bootcamp	23--31	1	windows via bootcamp	0.0
+2150	1746_0	screen keyboard mouse if cant see spending extra money jump mac beautiful screen responsive island backlit keyboard fun multi touch mouse worth extra money alone	screen	0--6	0	screen keyboard jump responsive backlit keyboard	1.0
+2151	3036_0	the pricing competitive	pricing	4--11	1	the pricing competitive	1.0
+2152	2668_0	the thing say touch pad doesnt work like time	touch pad	37--46	-1	touch pad work	0.0
+2153	1070_0	also i issued replacement rma dead pixels upper zone screen noticable	screen	80--86	-1	rma upper zone screen noticable	0.0
+2154	1906_0	only days i received computer back screen froze	screen	58--64	-1	screen froze	0.0
+2155	1742_1	size i know 13 small especially desktop replacement external monitor cares	external monitor	76--92	0	small especially desktop replacement external monitor	0.0
+2156	435_0	they sent back huge crack still work	work	62--66	-1	sent back huge crack still work	1.0
+2157	87_1	it easy operate i already ordered software gadgets new rolls royce laptops	operate	14--21	1	it easy operate ordered	1.0
+2158	2649_0	the processor screams unique way apple osx 16 functions graphics routed hardware rather software	processor	4--13	1	the processor screams	-1.0
+2159	597_1	the ilife software comes computer simple use produces great finished product	use	64--67	1	computer simple use produces	0.0
+2160	1648_0	and screen thing absolutely amazing high quality videos movies gaming	screen	8--14	1	screen thing	0.0
+2161	3076_1	battery lasting 6 hours i surfing web sundays checking football scores watching funny youtube videos	surfing web	41--56	0	lasting hours i surfing web	0.0
+2162	2751_0	good monitor performed well	monitor	5--12	1	good monitor performed	1.0
+2163	1450_2	the best thing build computer u company like dell allow choose components better price get computer compares one apple $2000 systems google dell coupons find codes take signifiant amount price	price	313--318	1	better price get take signifiant amount price	1.0
+2164	2270_1	a great feature spotlight search one search documents simply typing keyword rather parsing tens file folders document	feature	8--15	1	great feature documents	1.0
+2165	2961_0	my one complaint laptop i noticed electronic fuzz sound coming headphone jack headphones plugged	electronic fuzz sound	58--79	-1	noticed electronic fuzz sound	0.0
+2166	735_0	i bought last week next day return heated touch mouse stopped responding	touch mouse	95--106	-1	heated touch mouse stopped	-1.0
+2167	3049_0	yeah course smarty pants fix software compared early 2011 edition i see inbuilt applications crashing prompted send report apple i promptly	inbuilt applications	98--118	-1	inbuilt applications crashing prompted	0.0
+2168	2398_1	i bought mom reports battery life lasts day lightweight response computing internet focused activity mail research etc excellent	response	115--123	1	response internet	0.0
+2169	102_5	the dv4 boasted faster processor memory bigger hard drive old computer plus better quality web cam nicer screen many features	features	155--163	1	screen many features	0.0
+2170	1535_2	however i love particular mac fast great size fantastic features like lighted keyboard easy mouse pad	lighted keyboard	107--123	1	lighted keyboard easy pad	1.0
+2171	1630_0	i took back asus thing blue screen required remove battery reset	battery	87--94	0	battery reset	0.0
+2172	391_2	i paid extra memory 17 inch screen well top line dvd cd burners	dvd	79--82	1	top dvd burners	1.0
+2173	1308_0	the guy said i insist hinge tightened i accept condition repair	hinge	49--54	0	hinge tightened	0.0
+2174	2564_0	my kids dogs destroyed two power cords pulling	power cords	33--44	0	destroyed two power cords pulling	-1.0
+2175	871_0	i use cooling pad help	cooling pad	8--19	-1	use cooling pad help	1.0
+2176	2308_0	the objection i buy windows 7 system starter charges upgrade	windows 7 system	55--71	-1	windows 7 system starter charges upgrade	-1.0
+2177	1983_0	at first computer seemed great deal seemingly high end specs low low price	specs	63--68	1	great deal seemingly high end specs	1.0
+2178	2573_2	i upgraded memory replaced base windows 7 starter win 7 home runs fine	win 7 home	65--75	0	replaced base windows 7 starter win 7 home runs	1.0
+2179	550_0	the speakers useless	speakers	4--12	-1	the speakers useless	-1.0
+2180	2808_0	cords coming right power plus cords coming front headphones mic plus network connection left make messy setup cords going every direction	cords	0--5	-1	cords coming coming mic	0.0
+2181	2311_2	the battery holds well built solidly runs fast	runs	56--60	1	holds well runs fast	1.0
+2182	493_1	it weighed like seven pounds something like	seven pounds	16--28	0	seven pounds something	0.0
+2183	1322_0	so i supposed the lg service center cannot provide service called service center	lg service center	34--51	-1	the lg service center provide service called service center	0.0
+2184	456_0	the neat organized icon list welcome change cluttered confusing desktop icons	icon list	23--32	1	the neat organized icon list welcome	1.0
+2185	374_2	love graphics awesome programs including garageband really cool default background	garageband	47--57	1	awesome programs including garageband	1.0
+2186	2728_0	defective software	software	10--18	-1	defective software	-1.0
+2187	1924_1	in november computer messed entirely power installing windows update i hd flashed lost everything including school assignments irreplaceable pictures digital format several things update installed reason i unable roll back drivers everything earlier working condition update installed deleted history	drivers	349--356	-1	drivers everything	0.0
+2188	3060_1	i mainly use email internet managing personal files pics vids etc	managing personal files	41--64	0	use email managing personal files pics	0.0
+2189	2084_0	if want little custom ability drop bucks upgrade one robust versions win 7 grab 2gb stick memory spice bit	win 7	109--114	1	win 7 grab	1.0
+2190	2005_1	high quality killer gui extremely stable highly expandable bundled lots good applications easy use absolutely gorgeous	gui	36--39	1	killer gui extremely stable highly expandable	-1.0
+2191	1658_0	garageband musicians laptop equipped good working microphone good enough beginners musicians intermediate level	garageband	0--10	0	garageband musicians equipped good microphone good enough beginners musicians	1.0
+2192	610_0	lots extra space keyboard ridiculously small	space	14--19	1	extra space keyboard ridiculously small	-1.0
+2193	653_1	it played various games without problems ran aero smoothly flawlessly	aero	49--53	0	ran aero	0.0
+2194	657_0	it blue screened without warning running simply basic chrome	chrome	64--70	-1	running basic chrome	0.0
+2195	1190_0	maybe virus related maybe not computer locked many times two occasions screen simply gone black	screen	109--115	-1	occasions screen gone black	0.0
+2196	2645_1	i stupid pop windows even i pop ups blocked i wait 5 minutes webpage download best i run web programming software i need use without slowing	web programming software	163--187	1	run web programming software use	0.0
+2197	1597_1	i previously purchased 13 macbook pro specs aluminum style nvidia 9800 if i not mistaken major heating issues	specs	46--51	1	specs style nvidia 9800	0.0
+2198	1658_1	garageband musicians laptop equipped good working microphone good enough beginners musicians intermediate level	microphone	85--95	1	garageband musicians equipped good working microphone good enough beginners musicians	1.0
+2199	2811_0	fan vents side no cooling pad needed great feature	fan	0--3	1	fan vents	1.0
+2200	2909_1	have many higher priced computers crash burn long ever got use great memory speed etc	speed	107--112	-1	use great memory speed	1.0
+2201	2968_0	otherwise features 1	features	21--29	0	otherwise features 1	0.0
+2202	2182_0	they far easiest systems actually learn computers	systems	28--35	1	far easiest systems	1.0
+2203	2706_0	features like font block like old school	font	18--22	-1	font block	-1.0
+2204	2010_0	later held zero charge replacement worked less three months	charge	21--27	-1	charge replacement	0.0
+2205	2100_0	i run windows via bootcamp couple programs i not want buy mac version like cad programs	windows	6--13	0	run windows programs want programs	1.0
+2206	1984_2	who love dvd burner 80 gigabyte hd fairly new graphics chip as i soon discovered though reason similarly configured sony toshiba machines cost use higher quality components faster better configured end lasting lot longer	components	218--228	1	configured cost higher quality components better configured	1.0
+2207	2548_0	the track pad really stands though several different things depending many fingers use track pad awesome thinking apple	track pad	4--13	1	the track pad stands use track pad awesome thinking	1.0
+2208	500_1	we paid three year warranty extended warranty one ended well	extended warranty	44--61	0	paid three year warranty extended warranty one ended	0.0
+2209	1483_0	the laptop outstanding aspects except windows 7 starter not full windows 7	windows 7 starter	64--81	-1	laptop outstanding aspects except windows 7 starter not full windows 7	1.0
+2210	1989_0	windows xp sp2 caused many problems computer i remove	windows xp sp2	0--14	-1	windows xp sp2 caused	1.0
+2211	1534_0	i another mac got slow due older operating system	operating system	56--72	-1	slow older operating system	0.0
+2212	2922_0	i pleased performance laptop	performance	34--45	1	performance laptop	0.0
+2213	1126_1	the screen framed half full inch margin obviously unnecessary reduces screen size increases bulk	screen size	95--106	-1	the screen framed full margin obviously unnecessary reduces screen size increases	0.0
+2214	720_2	upgrading windows 7 starter thru windows 7 home premium windows 7 professional snap	windows 7 professional	66--88	0	windows 7 starter thru windows 7 home premium windows 7 professional snap	0.0
+2215	1758_0	the thing i key broad little dark see letters would help little lighter	key broad	35--44	-1	key broad little dark little	0.0
+2216	3081_1	once i removed software laptop loads 15 20 seconds	loads	43--48	0	software laptop loads seconds	0.0
+2217	2886_0	my dad one first toshiba ever made yes abit slow still works well hooked ethernet	ethernet	115--123	1	works well hooked ethernet	1.0
+2218	2547_1	the os still fast day laptop purchased continues run flawlessly	run	82--85	1	continues run flawlessly	1.0
+2219	2469_0	this macbook outstanding product great value	value	50--55	1	macbook outstanding product great value	1.0
+2220	744_2	the aspire wont even boot past acer screen droid i tried motorola etc plugged usb port	boot	21--25	-1	aspire even boot past screen	0.0
+2221	1592_1	enjoy toshiba force durability unparalleled	durability	28--38	1	enjoy toshiba force durability unparalleled	1.0
+2222	2470_1	its ease use top service apple phone assistance bellying genius bar cannot beat	service	28--35	1	use top service beat	1.0
+2223	443_0	great laptop school easy use beginners household	use	33--36	1	easy use beginners	1.0
+2224	808_0	3 weeks went computer keeps crashing not open applications	applications	70--82	0	crashing not open applications	0.0
+2225	2879_0	my husband got christmas getting expense laptop not work 2 days	work	89--93	-1	getting laptop not work days	0.0
+2226	968_0	i definitely getting new laptop issues warranty expires researching carefully i i run across situation like	warranty	80--88	0	warranty expires	0.0
+2227	2702_0	it speedy connected wirelessly network regardless connection weak not	connection	72--82	0	connected regardless connection weak not	-1.0
+2228	2757_1	i also love design looks feel toshiba feature wonderful	looks	28--33	1	design looks	0.0
+2229	2705_0	registration 1st use easy	use	17--20	1	1st use easy	1.0
+2230	1984_0	who love dvd burner 80 gigabyte hd fairly new graphics chip as i soon discovered though reason similarly configured sony toshiba machines cost use higher quality components faster better configured end lasting lot longer	hd	44--46	1	80 gigabyte hd new graphics end	0.0
+2231	1738_1	i plug 22 monitor speedy macosx performs well dual core dell windows 7 quad core	windows 7	121--130	1	performs dual core dell windows 7 quad core	0.0
+2232	2353_0	they developed excellent proprietary software editing video pictures i looking forward utilizing tools regular	proprietary software	30--50	1	excellent proprietary software pictures	1.0
+2233	300_2	i run dreamweaver final cut pro 7 photoshop safari firefox msn messenger applications constantly time	final cut pro 7	19--34	0	dreamweaver final cut pro 7	-1.0
+2234	334_0	it also capable moderate video editing although may need performance boost larger macbook pros heavy duty mobile video editing	video editing	41--54	1	capable moderate video editing need mobile video editing	1.0
+2235	8_1	overall laptop definitely keeper simple yet stylish design array fantastic colors choose	colors	106--112	1	fantastic colors choose	1.0
+2236	828_0	it loaded windows vista home premium delivered 1gb ram dog	windows vista home premium	21--47	0	windows vista home premium delivered	0.0
+2237	2622_0	reason it buy know first thing not lose value laptop price stay next year even apple decides change mode laptop value drop 10 20% unlike pc laptops drop 80%	value	90--95	1	value laptop laptop value drop drop	1.0
+2238	2153_0	the large screen gives option comfortably watch movies tv shows computer instead buying additional tv dorm room	screen	10--16	1	the large screen gives	0.0
+2239	456_1	the neat organized icon list welcome change cluttered confusing desktop icons	desktop icons	82--95	-1	change cluttered confusing desktop icons	-1.0
+2240	2970_0	i not call support line	support line	27--39	0	call support line	1.0
+2241	2393_1	i love size keyboard functions	keyboard	17--25	1	size keyboard functions	0.0
+2242	1476_0	the image great soud excellent	image	4--9	1	the image great soud excellent	1.0
+2243	2497_3	but application called boot camp allows add another os x like windows	windows	88--95	0	x like windows	1.0
+2244	1497_2	the photobooth great program takes good pictures built camera	built camera	72--87	1	good pictures built camera	1.0
+2245	2988_0	it great product great price	price	33--38	1	it great product great price	1.0
+2246	3045_1	fan noise the fan made constant hissing noise background	fan	15--18	-1	noise the fan noise	1.0
+2247	2647_0	the case carved single block aluminum	case	4--8	0	the case carved	0.0
+2248	2807_1	headphone mic jack front touch pad making touch pad hard use using headphones mic not mention laptop designed right handed person	mic jack	18--26	-1	headphone mic jack pad pad using headphones mic	0.0
+2249	1562_0	the difference apple keyboard pc keyboard took bit tim get used overall worth	apple keyboard	22--36	0	the difference apple keyboard pc keyboard took	0.0
+2250	2526_0	besides great look great machine	look	18--22	1	besides great look great machine	1.0
+2251	720_1	upgrading windows 7 starter thru windows 7 home premium windows 7 professional snap	windows 7 home premium	39--61	0	windows 7 starter thru windows 7 home premium windows 7 professional snap	0.0
+2252	2780_1	there no number pad right keyboard bummer	keyboard	43--51	-1	right keyboard bummer	-1.0
+2253	3018_0	the feel machine compared old macbook far superior	feel	4--8	1	feel machine	0.0
+2254	2477_1	i love feel key board well trackpad	trackpad	49--57	1	key board well trackpad	1.0
+2255	1646_0	but see macbook pro different may huge price tag comes full software would actually need free future updates	software	101--109	1	full software need	0.0
+2256	2465_1	since i keyboard 100 wpm i look unit comfortable keyboard no keys sticking lagging strange configuration extra key etc	keys	84--88	1	keyboard comfortable keyboard no keys	1.0
+2257	2868_0	true quality great price	quality	5--12	1	true quality great price	1.0
+2258	1770_1	it far exceeded expectations power storage ability	storage	47--54	1	power storage ability	1.0
+2259	2568_0	i love way entire suite software works together	suite software	26--43	1	entire suite software works	0.0
+2260	2479_1	it much streamlined system adding programs using internet things everyone computer	system	30--36	1	streamlined system adding	0.0
+2261	980_0	first burned fused power adapter plug	power adapter plug	34--52	-1	burned fused power adapter plug	0.0
+2262	2460_1	it come good use finances scheduling parents business expenses definitely amazing gaming	use	22--25	1	good use finances	1.0
+2263	1128_0	keyboard could use trimming	keyboard	0--8	-1	keyboard use	0.0
+2264	1430_0	i not much computer techie i understand internal problems though i trend micro antiviral program	trend micro	104--115	0	i techie i though i trend micro antiviral program	0.0
+2265	142_0	i never kind quality issue dell not say dell great not brand new laptop	quality	25--32	-1	quality issue	0.0
+2266	963_2	another three weeks later i laptop back new mousepad keys casing	casing	80--86	0	new mousepad casing	0.0
+2267	2991_0	battery life needs life	battery life	0--12	-1	battery life needs life	0.0
+2268	2890_0	love this laptop wonderful price for what you get	price	27--32	1	laptop wonderful price get	1.0
+2269	453_0	there several programs school office use pages numbers keynote etc music garageband photo management photo booth iphoto video editing movie making imovie etc	programs	18--26	0	several programs office use	0.0
+2270	1648_1	and screen thing absolutely amazing high quality videos movies gaming	gaming	90--96	1	and thing gaming	0.0
+2271	300_4	i run dreamweaver final cut pro 7 photoshop safari firefox msn messenger applications constantly time	safari	47--53	0	safari applications	0.0
+2272	214_1	keyboard good sized use	use	32--35	1	keyboard good sized use	1.0
+2273	1953_0	my toshiba not sound everything certain things	sound	24--29	-1	sound everything	0.0
+2274	2996_0	i keep turning decides lower no mute	mute	68--72	-1	decides no mute	-1.0
+2275	1201_0	once i told suspicious power supply problem	power supply	46--58	-1	suspicious power supply problem	-1.0
+2276	214_0	keyboard good sized use	keyboard	0--8	1	keyboard good sized	1.0
+2277	1548_0	apparently well built gorgeous look i5 macbook pro winning combination price performance	price	94--99	1	i5 price performance	0.0
+2278	1204_0	after paying several hundred dollars service frustrating cannot get help hours	service	46--53	-1	paying service	0.0
+2279	1739_0	design durable	design	0--6	1	design durable	0.0
+2280	1937_3	i got back built webcam built mic shorting anytime i touched lid mind means communication fiance deployed i suffered thru would constantly reset computer able use cam mic anytime went	mic	277--280	-1	built built mic anytime cam mic anytime	0.0
+2281	2754_0	i recommend word processing internet users	word processing	16--31	1	word processing users	0.0
+2282	3074_1	the screen bright keyboard nice	keyboard	29--37	1	screen bright keyboard nice	1.0
+2283	2267_2	as computer science student college i find portability longevity ease use computer make shockingly want homework	use	94--97	1	computer use computer	0.0
+2284	469_0	i gave daughter i hated screen hated no cd drive least play cd i wanted listen music schoolwork	screen	50--56	-1	gave hated screen hated	-1.0
+2285	2914_0	price purpose awesome	price	0--5	1	price purpose	0.0
+2286	1771_0	it easy navigate update programs	update programs	27--42	0	navigate update programs	0.0
+2287	2867_2	it easy use features speed power i could ask	power	50--55	1	speed power	0.0
+2288	2497_2	but application called boot camp allows add another os x like windows	boot camp	36--45	0	boot camp allows	0.0
+2289	879_0	replaced awesome ergonomic small lightweight power supply power supply weighed machine	power supply	58--70	1	replaced awesome ergonomic small lightweight power supply power supply weighed	1.0
+2290	661_2	there also seemed problem hard disc certain times windows loads claims not able find drivers files	drivers	122--129	0	drivers files	0.0
+2291	1926_0	again february computer completely failed point could not load windows i contacted acer get fixed thru warrenty took 3 days fighting phone agents seemed though none spoke english	windows	84--91	0	load windows contacted	0.0
+2292	377_0	awesome laptop perfect size carry around college	size	31--35	1	awesome laptop perfect size carry	1.0
+2293	575_2	i work film editing post production i need laptop not power memory speed well	speed	103--108	0	need not power memory speed well	1.0
+2294	2839_0	mouse jumps around time clicks stuff dont want	mouse	4--9	-1	mouse jumps	0.0
+2295	1911_0	however frozen screens kept happening	screens	21--28	-1	frozen screens kept	0.0
+2296	1131_1	then 4 months charger stopped working i forced go buy new hardware keep computer running	hardware	92--100	-1	new hardware keep	0.0
+2297	1912_1	i continued take computer again replaced hard drive mother board yet	mother board	81--93	-1	replaced hard drive mother board	-1.0
+2298	1436_0	i vista i unable install uninstall programs	vista	7--12	-1	i vista i unable install	0.0
+2299	2909_2	have many higher priced computers crash burn long ever got use great memory speed etc	priced	21--27	-1	many higher priced burn	0.0
+2300	671_2	this nicely sized laptop lots processing power long battery life	sized	17--22	1	this nicely sized laptop lots processing	1.0
+2301	2778_0	the screen little glary i hated clicking buttons i got used	screen	4--10	-1	the screen used	0.0
+2302	2940_0	runs smooth quick	runs	0--4	1	runs smooth quick	0.0
+2303	2506_2	i originally concerned i view work i done college mac pc formatting i even thrilled learn programs like ilife iwork allow convert pc documents readable files macs	iwork	180--185	1	programs like ilife iwork	1.0
+2304	1026_0	so ac plug go get lose i could actually inside computer two three times not good	ac plug	14--21	-1	ac plug go	0.0
+2305	2333_0	obviously one important features computer human interface	features	36--44	0	obviously one important features human interface	1.0
+2306	1966_0	it not features i expected	features	24--32	-1	it not features expected	0.0
+2307	2596_0	this system came loaded windows 7 starter	windows 7 starter	29--46	0	came loaded windows 7 starter	0.0
+2308	2100_2	i run windows via bootcamp couple programs i not want buy mac version like cad programs	cad programs	98--110	0	windows via bootcamp couple programs buy like cad programs	1.0
+2309	741_0	small enough use long flight light enough carry airports powerful enough replace desktop long business trips	carry	54--59	1	small enough use light enough carry powerful enough replace	1.0
+2310	386_2	the screen large crystal clear amazing colors resolution	resolution	67--77	1	clear amazing colors resolution	1.0
+2311	2694_0	performance good price	performance	0--10	1	performance good price	1.0
+2312	1074_1	but buy model purchase 4gb ram 2x2gb $92 1x4gb $99 save $100 model 8gb ram	8gb ram	132--142	0	ram 2x2gb save ram	1.0
