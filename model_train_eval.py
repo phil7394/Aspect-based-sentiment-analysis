@@ -80,13 +80,13 @@ def train_SVC(filePath):
     train_df = pandas.read_csv(filePath, sep='\t')
     # train_data, train_class = model_utils.read_embeddings(filePath)
     train_class = train_df[' class'].as_matrix()
-    for i in range(20, 21, 1):
+    for i in range(5, 21, 1):
         train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
         # train_data = model_utils.apply_aspdep_weight(train_df, 1.7)
         text_clf = SVC(C=1, cache_size=2000, class_weight=None, coef0=0.0,
-                       decision_function_shape='ovr', degree=0, gamma=0.9, kernel='rbf',
+                       decision_function_shape='ovr', degree=0, gamma=0.6, kernel='rbf',
                        max_iter=-1, probability=False, random_state=None, shrinking=True,
-                       tol=0.003, verbose=False).fit(train_data, train_class)
+                       tol=0.001, verbose=False).fit(train_data, train_class)
         joblib.dump(text_clf, 'model_dumps/data_2/wt_aspect/SVC_model.pkl')  # Accuracy: ', 0.7505889749930229
 
         """PERFORMANCE EVALUATION"""
@@ -161,19 +161,20 @@ def train_ET(filePath):
     '''TRAINING'''
     train_df = pandas.read_csv(filePath, sep='\t')
     train_class = train_df[' class'].as_matrix()
-    # for i in range(0, 15, 1):
-    #     train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
-    train_data = model_utils.apply_aspdep_weight(train_df, 1.3)
-    text_clf = ExtraTreesClassifier(n_estimators=120, max_depth=127, random_state=0, n_jobs=-1).fit(train_data,
-                                                                                                    train_class)
-    joblib.dump(text_clf, 'model_dumps/data_1/wt_aspect/ExtraTrees_model.pkl')
-    # 'Accuracy: ', 0.7410500269345847
-    """PERFORMANCE EVALUATION"""
-    accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True,
-                                                 shuffle=True)
-    # print("asp_wt: {}".format(0.1 * i))
-    print("Accuracy: ", accuracy)
-    print(clf_report)
+    for i in range(0, 15, 1):
+        train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
+        train_data = model_utils.apply_aspdep_weight(train_df, 1.3)
+        text_clf = ExtraTreesClassifier(n_estimators=120, max_depth=127, random_state=0, n_jobs=-1).fit(train_data,
+                                                                                                        train_class)
+        joblib.dump(text_clf, 'model_dumps/data_1/wt_aspect/ExtraTrees_model.pkl')
+        # 'Accuracy: ', 0.7410500269345847
+        """PERFORMANCE EVALUATION"""
+        accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True,
+                                                     over_sample_size=1400,
+                                                     shuffle=True)
+        print("asp_wt: {}".format(0.1 * i))
+        print("Accuracy: ", accuracy)
+        print(clf_report)
 
 
 # def train_gcForest(filePath):
@@ -393,7 +394,7 @@ if __name__ == '__main__':
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
-    # filePath = 'out_data_2/data_2_sw_train.csv'
+    filePath = 'out_data_2/data_2_sw_train.csv'
     # filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
@@ -407,8 +408,8 @@ if __name__ == '__main__':
     # train_XGBClassifier(filePath)
     # print("Random Forest")
     # train_RF(filePath)
-    # print("Extra Tree ")
-    # train_ET(filePath)
+    print("Extra Tree ")
+    train_ET(filePath)
     # print("Stacked Generalizer")
     # train_StackedGeneralizer(filePath)
-    hyperparam_tuning_SVC()
+    # hyperparam_tuning_SVC()
