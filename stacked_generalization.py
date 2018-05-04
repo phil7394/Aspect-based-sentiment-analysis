@@ -218,6 +218,7 @@ class StackedGeneralizer(BaseEstimator, ClassifierMixin):
     def fit(self, X, y):
         X_blend = self.fit_transform_base_models(X, y)
         self.fit_blending_model(X_blend, y)
+        return self
 
     def evaluate(self, y, y_pred):
         print(classification_report(y, y_pred))
