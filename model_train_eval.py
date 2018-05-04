@@ -297,7 +297,7 @@ def hyperparam_tuning_SVC():
     """HYPER-PARAMETER TUNING"""
     clf = SVC()
 
-    train_df = pandas.read_csv('out_data_1/data_1_sw.csv', sep='\t')
+    train_df = pandas.read_csv('out_data_2/data_2_sw_train.csv', sep='\t')
     train_data = model_utils.apply_aspdep_weight(train_df, 0.8)
     train_class = train_df[' class'].as_matrix()
     parameters = {
@@ -393,7 +393,7 @@ if __name__ == '__main__':
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
-    filePath = 'out_data_2/data_2_sw_train.csv'
+    # filePath = 'out_data_2/data_2_sw_train.csv'
     # filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
@@ -401,8 +401,8 @@ if __name__ == '__main__':
     # train_BernoulliNB(filePath)
     # print("SGD ")
     # train_SGD(filePath)
-    print("SVC ")
-    train_SVC(filePath)
+    # print("SVC ")
+    # train_SVC(filePath)
     # print("XGBClassifier ")
     # train_XGBClassifier(filePath)
     # print("Random Forest")
@@ -411,3 +411,4 @@ if __name__ == '__main__':
     # train_ET(filePath)
     # print("Stacked Generalizer")
     # train_StackedGeneralizer(filePath)
+    hyperparam_tuning_SVC()

@@ -70,7 +70,8 @@ def pos2vec(pvdf):
         p2v_dict = dict()
         for index, row in pvdf.iterrows():
             word_list = nltk.word_tokenize(row[' text'])
-            tagged_list = map(lambda w_p_tuple: w_p_tuple[1], nltk.pos_tag(word_list))
+            tagged_list = list(map(lambda w_p_tuple: w_p_tuple[1], nltk.pos_tag(word_list)))
+            tev.fit(tagged_list)
             vec = tev.transform(tagged_list)
             p2v_dict[row['example_id']] = " ".join(map(str, vec.tolist())) + " " + str(row[' class'])
         for k, v in p2v_dict.items():
