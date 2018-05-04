@@ -75,14 +75,14 @@ def train_SGD(filePath):
     print(clf_report)
 
 
-def train_SVC(filePath):
+def train_SVC(filePath, count_vec_file):
     '''TRAINING'''
     train_df = pandas.read_csv(filePath, sep='\t')
     # train_data, train_class = model_utils.read_embeddings(filePath)
     train_class = train_df[' class'].as_matrix()
-    for i in range(15, 30, 1):
-        train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
-    # train_data = model_utils.apply_aspdep_weight(train_df, 1.7)
+    for i in range(18, 19, 1):
+        train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i, count_vec_file)
+        # train_data = model_utils.apply_aspdep_weight(train_df, 1.7)
         text_clf = SVC(C=1, cache_size=2000, class_weight=None, coef0=0.0,
                        decision_function_shape='ovr', degree=0, gamma=0.9, kernel='rbf',
                        max_iter=-1, probability=False, random_state=None, shrinking=True,
@@ -90,8 +90,9 @@ def train_SVC(filePath):
         joblib.dump(text_clf, 'model_dumps/data_2/wt_aspect/SVC_model.pkl')  # Accuracy: ', 0.7505889749930229
 
         """PERFORMANCE EVALUATION"""
-        os_size = 2000
-        accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True, over_sample_size=os_size,
+
+        accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True,
+                                                     over_sample_size=None,
                                                      shuffle=True)
         print("asp_wt: {}".format(0.1 * i))
         print("Accuracy: ", accuracy)
@@ -339,8 +340,8 @@ def hyperparam_tuning_SGD():
         print("%s: %r" % (param_name, gs_clf.best_params_[param_name]))
 
 
-def final_testing(text_clf, test_input_file, test_preproc_file, test_predict_file,
-                  asp_wt):  # TODO test, oversample and save models
+def final_testing(text_clf, train_preproc_file, test_input_file, test_preproc_file, test_predict_file,
+                  asp_wt):
     """TESTING"""
     preproc_args = ["-i", test_input_file,
                     "-o", test_preproc_file,
@@ -349,9 +350,9 @@ def final_testing(text_clf, test_input_file, test_preproc_file, test_predict_fil
                     "-lo", "y",
                     "-ad", "y"]
     PreProcessor.main(preproc_args)
-
+    train_df = pandas.read_csv(train_preproc_file, sep='\t')
     test_df = pandas.read_csv(test_preproc_file, sep='\t')
-    test_data = model_utils.apply_aspdep_weight(test_df, asp_wt)
+    test_data = model_utils.apply_aspdep_weight(train_df, asp_wt, test_df)
 
     predicted = text_clf.predict(test_data)
     print(predicted)
@@ -359,6 +360,7 @@ def final_testing(text_clf, test_input_file, test_preproc_file, test_predict_fil
         for doc, y_pred in zip(test_df['example_id'].as_matrix(), predicted):
             print("%r ;; %s" % (str(doc), y_pred))
             res_file.write("%r ;; %s\n" % (str(doc), y_pred))
+    # print(accuracy_score(test_df[' class'].as_matrix(), predicted))
 
 
 if __name__ == '__main__':
@@ -376,16 +378,22 @@ if __name__ == '__main__':
     #
     # if args['data'] == 1:
     #     clf = joblib.load('model_dumps/data_1/wt_aspect/Multinomial_nb_model.pkl')
+    #     count_vec_pkl_file = 'model_dumps/data_1/wt_aspect/Count_Vectorizer.pkl'
     #     asp_wt = 0.7
     # else:
     #     clf = joblib.load('model_dumps/data_2/wt_aspect/Bernoulli_nb_model.pkl')
+    #     count_vec_pkl_file = 'model_dumps/data_2/wt_aspect/Count_Vectorizer.pkl'
     #     asp_wt = 0.5
-    # final_testing(clf, args['input'], args['output'], args['result'])
+    # final_testing(clf, args['input'], args['output'], args['result'], asp_wt, count_vec_pkl_file)
+    clf = joblib.load('model_dumps/data_2/wt_aspect/SVC_model.pkl')
+    final_testing(clf, 'out_data_2/data_2_sw_train.csv', 'out_data_2/data_2_sw_test.csv',
+                  'out_data_2/data_2_sw_test.csv', 'result_2.txt', 2.5)
 
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
-    filePath = 'out_data_2/data_2_sw_train.csv'
+    # filePath = 'out_data_2/data_2_sw_train.csv'
+    # count_vec_file = 'model_dumps/data_2/wt_aspect/Count_Vectorizer.pkl'
     # filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
@@ -393,8 +401,8 @@ if __name__ == '__main__':
     # train_BernoulliNB(filePath)
     # print("SGD ")
     # train_SGD(filePath)
-    print("SVC ")
-    train_SVC(filePath)
+    # print("SVC ")
+    # train_SVC(filePath, count_vec_file)
     # print("XGBClassifier ")
     # train_XGBClassifier(filePath)
     # print("Random Forest")
