@@ -5,13 +5,13 @@ from sklearn.ensemble import ExtraTreesClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.externals import joblib
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, accuracy_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC
 from xgboost import XGBClassifier
 
+import PreProcessor
 import model_utils
 from stacked_generalization import StackedGeneralizer
 from standard_deviation_clf import StandardDeviationClassifier
@@ -92,9 +92,9 @@ def train_SVC(filePath):
         """PERFORMANCE EVALUATION"""
 
         accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True,
-                                                     over_sample_size=1400,
+                                                     over_sample_size=None,
                                                      shuffle=True)
-        print("asp_wt: {}".format(0.1 * i))
+        # print("asp_wt: {}".format(0.1 * i))
         print("Accuracy: ", accuracy)
         print(clf_report)
 
@@ -165,7 +165,7 @@ def train_ET(filePath):
         train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
         text_clf = ExtraTreesClassifier(n_estimators=120, max_depth=127, random_state=0, n_jobs=-1).fit(train_data,
                                                                                                         train_class)
-        joblib.dump(text_clf, 'model_dumps/data_1/wt_aspect/ExtraTrees_model.pkl')
+        joblib.dump(text_clf, 'model_dumps/data_2/wt_aspect/ExtraTrees_model.pkl')
         # 'Accuracy: ', 0.7410500269345847
         """PERFORMANCE EVALUATION"""
         accuracy, clf_report = model_utils.k_fold_cv(text_clf, train_data, train_class, k=10, over_sample_class=True,
@@ -187,15 +187,15 @@ def train_StackedGeneralizer(filePath):
     #     train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i)
     train_data = model_utils.apply_aspdep_weight(train_df, 1.8)
 
-    base_models = [joblib.load('model_dumps/data_1/wt_aspect/SVC_model.pkl'),
-                   joblib.load('model_dumps/data_1/wt_aspect/ExtraTrees_model.pkl')]
+    base_models = [joblib.load('model_dumps/data_2/wt_aspect/SVC_model.pkl'),
+                   joblib.load('model_dumps/data_2/wt_aspect/ExtraTrees_model.pkl')]
     # define blending model
     blending_model = LogisticRegression(random_state=1)
 
     # initialize multi-stage model
     sg = StackedGeneralizer(base_models, blending_model, n_folds=10, verbose=False).fit(train_data, train_class)
 
-    joblib.dump(sg, 'model_dumps/data_1/wt_aspect/Stacked_model.pkl')
+    joblib.dump(sg, 'model_dumps/data_2/wt_aspect/Stacked_model.pkl')
 
     """PERFORMANCE EVALUATION"""
     accuracy, clf_report = model_utils.k_fold_cv(sg, train_data, train_class, k=10, over_sample_class=True,
@@ -343,13 +343,13 @@ def hyperparam_tuning_SGD():
 def final_testing(text_clf, train_preproc_file, test_input_file, test_preproc_file, test_predict_file,
                   asp_wt):
     """TESTING"""
-    # preproc_args = ["-i", test_input_file,
-    #                 "-o", test_preproc_file,
-    #                 "-sw", "y",
-    #                 "-pu", "y",
-    #                 "-lo", "y",
-    #                 "-ad", "y"]
-    # PreProcessor.main(preproc_args)
+    preproc_args = ["-i", test_input_file,
+                    "-o", test_preproc_file,
+                    "-sw", "y",
+                    "-pu", "y",
+                    "-lo", "y",
+                    "-ad", "y"]
+    PreProcessor.main(preproc_args)
     train_df = pandas.read_csv(train_preproc_file, sep='\t')
     test_df = pandas.read_csv(test_preproc_file, sep='\t')
     test_data = model_utils.apply_aspdep_weight(train_df, asp_wt, test_df)
@@ -360,8 +360,8 @@ def final_testing(text_clf, train_preproc_file, test_input_file, test_preproc_fi
         for doc, y_pred in zip(test_df['example_id'].as_matrix(), predicted):
             print("%r;;%s" % (str(doc), y_pred))
             res_file.write("%r;;%s\n" % (str(doc), y_pred))
-    print(accuracy_score(test_df[' class'].as_matrix(), predicted))
-    classification_report(test_df[' class'].as_matrix(), predicted)
+    # print(accuracy_score(test_df[' class'].as_matrix(), predicted))
+    # classification_report(test_df[' class'].as_matrix(), predicted)
 
 
 if __name__ == '__main__':
@@ -386,29 +386,29 @@ if __name__ == '__main__':
     #     train_file = 'out_data_2/data_2_sw_train.csv'
     #     asp_wt = 0.5
     # final_testing(clf, train_file, args['input'], args['output'], args['result'], asp_wt, count_vec_pkl_file)
-    # clf = joblib.load('model_dumps/data_2/wt_aspect/SVC_model.pkl')
-    # final_testing(clf, 'out_data_2/data_2_sw_train.csv', None,
-    #               'out_data_2/data_2_sw_test.csv', 'result_2.txt', 2.0)
+    # clf = joblib.load('model_dumps/data_1/wt_aspect/Stacked_model.pkl')
+    # final_testing(clf, 'out_data_1/data_1_sw_train.csv', 'Project-2_Test_Data/Data-1_test.csv',
+    #               'Project-2_Test_Data/Data-1_preproc_test.csv', 'Project-2_Test_Data/result_1.txt', 2.0)
 
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
-    # filePath = 'out_data_2/data_2_sw_train.csv'
-    filePath = 'embedding/data_set_1/pos2vec.txt'
+    filePath = 'out_data_2/data_2_sw_train.csv'
+    # filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
     # print("Bernoulli NB ")
     # train_BernoulliNB(filePath)
     # print("SGD ")
     # train_SGD(filePath)
-    print("SVC ")
-    train_SVC(filePath)
+    # print("SVC ")
+    # train_SVC(filePath)
     # print("XGBClassifier ")
     # train_XGBClassifier(filePath)
     # print("Random Forest")
     # train_RF(filePath)
     # print("Extra Tree ")
     # train_ET(filePath)
-    # print("Stacked Generalizer")
-    # train_StackedGeneralizer(filePath)
+    print("Stacked Generalizer")
+    train_StackedGeneralizer(filePath)
     # hyperparam_tuning_SVC()
