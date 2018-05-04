@@ -1,25 +1,37 @@
 import numpy as np
 import pandas
+from imblearn.over_sampling import SMOTE
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics import classification_report, accuracy_score, precision_recall_fscore_support
 from sklearn.model_selection import cross_val_predict
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 from sklearn.utils.multiclass import unique_labels
-from imblearn.over_sampling import SMOTE
 
 
-def apply_aspdep_weight(train_df, weight):
+def apply_aspdep_weight(train_df, weight, test_df=None):
     train_text = train_df[' text'].values.astype('U')
     train_aspdep = train_df['asp_dep_words'].values.astype('U')
+
     text_count_vect = CountVectorizer()
-    x_text_counts = text_count_vect.fit_transform(train_text)
+    tr_text_counts = text_count_vect.fit_transform(train_text)
     text_voc = text_count_vect.vocabulary_
+
     asp_dep_vect = CountVectorizer(vocabulary=text_voc)
-    x_aspdep_counts = asp_dep_vect.fit_transform(train_aspdep)
-    x_count_vec = x_text_counts + weight * x_aspdep_counts
-    x_tfidf_vec = TfidfTransformer(use_idf=True).fit_transform(x_count_vec)
-    return x_tfidf_vec
+    tr_aspdep_counts = asp_dep_vect.fit_transform(train_aspdep)
+    tr_count_vec = tr_text_counts + weight * tr_aspdep_counts
+    tr_tfidf_vec = TfidfTransformer(use_idf=True).fit_transform(tr_count_vec)
+
+    if test_df is not None:
+        test_text = test_df[' text'].values.astype('U')
+        test_aspdep = test_df['asp_dep_words'].values.astype('U')
+        te_text_counts = text_count_vect.transform(test_text)
+        te_aspdep_counts = asp_dep_vect.transform(test_aspdep)
+        te_count_vec = te_text_counts + weight * te_aspdep_counts
+        te_tfidf_vec = TfidfTransformer(use_idf=True).fit_transform(te_count_vec)
+        return te_tfidf_vec
+
+    return tr_tfidf_vec
 
 
 def extract_aspect_related_words(sdp, ardf):
@@ -63,8 +75,11 @@ def get_cv_metrics(text_clf, train_data, train_class, k_split):
 
 
 def over_sample(X_train, y_train, over_sample_size):
-    sample_map = {k: over_sample_size for k in [-1, 0, 1]}
-    sm = SMOTE(ratio=sample_map, random_state=0)
+    if over_sample_size is not None:
+        sample_map = {k: over_sample_size for k in [-1, 0, 1]}
+        sm = SMOTE(ratio=sample_map, random_state=0)
+    else:
+        sm = SMOTE(random_state=0)
     X_res, y_res = sm.fit_sample(X_train, y_train)
     return X_res, y_res
 
@@ -115,7 +130,7 @@ def get_train_test_indices(X, y, k, shuffle):
     return train_test_indices
 
 
-def k_fold_cv(clf, X, y, k=10, over_sample_class=False, over_sample_size=1000, shuffle=False):
+def k_fold_cv(clf, X, y, k=10, over_sample_class=False, over_sample_size=None, shuffle=False):
     if X.shape[0] == len(y):
         train_test_indices = get_train_test_indices(X, y, k, shuffle)
         labels = unique_labels(y)
@@ -124,7 +139,7 @@ def k_fold_cv(clf, X, y, k=10, over_sample_class=False, over_sample_size=1000, s
         k_test_indices = []
         for i in range(0, k):
             X_train, y_train, X_test, y_test = split_train_test(train_test_indices[i], X, y)
-            if over_sample_class:  # TODO SMOTE
+            if over_sample_class:
                 X_train, y_train = over_sample(X_train, y_train, over_sample_size)
             y_pred = clf.fit(X_train, y_train).predict(X_test)
             k_predictions.append(y_pred)
