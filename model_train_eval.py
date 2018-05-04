@@ -77,9 +77,9 @@ def train_SGD(filePath):
 
 def train_SVC(filePath, count_vec_file):
     '''TRAINING'''
-    train_df = pandas.read_csv(filePath, sep='\t')
-    # train_data, train_class = model_utils.read_embeddings(filePath)
-    train_class = train_df[' class'].as_matrix()
+    # train_df = pandas.read_csv(filePath, sep='\t')
+    train_data, train_class = model_utils.read_embeddings(filePath)
+    # train_class = train_df[' class'].as_matrix()
     for i in range(18, 19, 1):
         train_data = model_utils.apply_aspdep_weight(train_df, 0.1 * i, count_vec_file)
         # train_data = model_utils.apply_aspdep_weight(train_df, 1.7)
@@ -385,24 +385,24 @@ if __name__ == '__main__':
     #     count_vec_pkl_file = 'model_dumps/data_2/wt_aspect/Count_Vectorizer.pkl'
     #     asp_wt = 0.5
     # final_testing(clf, args['input'], args['output'], args['result'], asp_wt, count_vec_pkl_file)
-    clf = joblib.load('model_dumps/data_2/wt_aspect/SVC_model.pkl')
-    final_testing(clf, 'out_data_2/data_2_sw_train.csv', 'out_data_2/data_2_sw_test.csv',
-                  'out_data_2/data_2_sw_test.csv', 'result_2.txt', 2.5)
+    # clf = joblib.load('model_dumps/data_2/wt_aspect/SVC_model.pkl')
+    # final_testing(clf, 'out_data_2/data_2_sw_train.csv', 'out_data_2/data_2_sw_test.csv',
+    #               'out_data_2/data_2_sw_test.csv', 'result_2.txt', 2.5)
 
     """===============================TRAINING==========================================="""
     # fileLists = ['out_data_1/test_data_1_sw.csv']
     # for fileno, filePath in enumerate(fileLists):
     # filePath = 'out_data_2/data_2_sw_train.csv'
     # count_vec_file = 'model_dumps/data_2/wt_aspect/Count_Vectorizer.pkl'
-    # filePath = 'embedding/data_set_1/improvedvec.txt'
+    filePath = 'embedding/data_set_1/improvedvec.txt'
     # print("Multinomial NB")
     # train_MultinomialNB(filePath)
     # print("Bernoulli NB ")
     # train_BernoulliNB(filePath)
     # print("SGD ")
     # train_SGD(filePath)
-    # print("SVC ")
-    # train_SVC(filePath, count_vec_file)
+    print("SVC ")
+    train_SVC(filePath, count_vec_file)
     # print("XGBClassifier ")
     # train_XGBClassifier(filePath)
     # print("Random Forest")
