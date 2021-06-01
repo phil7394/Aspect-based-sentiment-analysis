@@ -24,6 +24,6 @@ scipy==1.0.1
 six==1.11.0
 sklearn==0.0
 smart-open==1.5.7
-urllib3==1.22
+urllib3==1.26.5
 vaderSentiment==2.5
 xgboost==0.71
